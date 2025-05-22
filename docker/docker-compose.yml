@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  chemistry-llm-dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: development
+    volumes:
+      - ../:/home/app/chemistry-llm-inference
+      - model_cache:/home/app/.cache
+    environment:
+      - CHEMISTRY_LLM_LOG_LEVEL=INFO
+    command: bash
+    tty: true
+    stdin_open: true
+    
+  chemistry-llm-prod:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: production
+    volumes:
+      - model_cache:/home/app/.cache
+      - ./models:/home/app/models:ro
+    environment:
+      - CHEMISTRY_LLM_MODEL_PATH=/home/app/models
+      - CHEMISTRY_LLM_LOG_LEVEL=INFO
+    command: chemistry-llm --model-path /home/app/models --interactive
+
+volumes:
+  model_cache:

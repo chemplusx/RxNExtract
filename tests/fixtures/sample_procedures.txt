@@ -1,0 +1,14 @@
+"""
+Sample chemical procedures for testing
+"""
+
+Add 5.0 g of benzoic acid to 100 mL of hot water and stir until dissolved.
+Combine 10 mL of acetic acid with 15 mL of methanol in a round-bottom flask.
+Heat the mixture of benzene and aluminum chloride to reflux for 4 hours.
+Cool the reaction mixture in an ice bath and filter the precipitated crystals.
+Wash the product with cold water and dry in a vacuum oven at 60°C.
+Dissolve 2.5 g of sodium hydroxide in 50 mL of distilled water.
+Add the solution dropwise to the stirring organic layer over 30 minutes.
+Extract the aqueous layer with diethyl ether three times (25 mL each).
+Concentrate the combined organic extracts under reduced pressure.
+Recrystallize the crude product from hot ethanol to obtain pure crystals.

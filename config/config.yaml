@@ -1,0 +1,72 @@
+# RxnExtract
+
+model:
+  # Generation parameters
+  default_temperature: 0.1
+  default_top_p: 0.95
+  max_new_tokens: 512
+  max_length: 1024
+  repetition_penalty: 1.1
+  
+  # Quantization settings
+  quantization:
+    load_in_4bit: true
+    bnb_4bit_quant_type: "nf4"
+    bnb_4bit_compute_dtype: "float16"
+    bnb_4bit_use_double_quant: true
+  
+  # Model loading settings
+  device_map: "auto"
+  torch_dtype: "float16"
+  trust_remote_code: true
+
+# Prompt configuration
+prompts:
+  use_cot: true
+  cot_steps:
+    - "Identify Reactants: Look for starting materials, main chemical compounds being transformed"
+    - "Identify Reagents: Find chemicals that facilitate the reaction (catalysts, bases, acids, etc.)"
+    - "Identify Solvents: Look for liquids used to dissolve reactants (water, ethanol, etc.)"
+    - "Identify Conditions: Note temperature, time, pressure, and other reaction conditions"
+    - "Identify Workup Steps: Find purification, separation, or processing steps"
+    - "Identify Products: Look for final compounds formed, yields mentioned"
+  
+  xml_template: |
+    <reaction>
+      <reactant name="compound_name" amount="quantity units" />
+      <reagent name="compound_name" amount="quantity units" />
+      <solvent name="compound_name" amount="quantity units" />
+      <workup type="operation_type" duration="time" note="description" />
+      <product name="compound_name" yield="percentage%" />
+    </reaction>
+
+# Logging configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_handler:
+    enabled: false
+    filename: "chemistry_llm.log"
+    max_bytes: 10485760  # 10MB
+    backup_count: 5
+
+# Output configuration
+output:
+  include_raw: false
+  include_confidence: false
+  include_timing: true
+  xml_pretty_print: true
+  json_indent: 2
+
+# Performance settings  
+performance:
+  batch_size: 1
+  num_workers: 4
+  pin_memory: true
+  enable_torch_compile: false  # Set to true for PyTorch 2.0+
+
+# Validation settings
+validation:
+  validate_xml: true
+  strict_parsing: false
+  min_confidence_threshold: 0.0
