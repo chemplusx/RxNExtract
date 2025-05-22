@@ -1,11 +1,11 @@
 # RxnExtract
 
-A professional-grade system for extracting chemical reaction information from procedure texts using fine-tuned Large Language Models with optimized Chain-of-Thought prompting.
+A professional-grade system for extracting chemical reaction information from procedure texts using fine-tuned LLM with Dynamic prompting and self grounding.
 
 ## 🚀 Features
 
 - **Modular Architecture**: Clean, maintainable codebase with separation of concerns
-- **Chain-of-Thought Prompting**: Advanced prompting strategies for better extraction accuracy
+- **Dynamic Prompting**: Advanced dynamic prompt selection for better extraction accuracy
 - **Multiple Interfaces**: CLI, interactive mode, batch processing, and programmatic API
 - **Memory Efficient**: 4-bit quantization support for deployment on various hardware
 - **Robust Parsing**: Error-tolerant XML parsing with structured output
@@ -36,8 +36,8 @@ A professional-grade system for extracting chemical reaction information from pr
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/chemistry-llm-inference.git
-cd chemistry-llm-inference
+git clone https://github.com/chemplusx/RxNExtract.git
+cd RxNExtract
 
 # Create virtual environment
 python -m venv venv
@@ -51,8 +51,8 @@ pip install -e .
 
 ```bash
 # Clone and setup for development
-git clone https://github.com/your-org/chemistry-llm-inference.git
-cd chemistry-llm-inference
+git clone https://github.com/your-org/RxNExtract.git
+cd RxNExtract
 
 # Create virtual environment
 python -m venv venv
@@ -71,6 +71,10 @@ pip install -e .
 | GPU Memory | 4GB | 12GB+ |
 | Storage | 20GB | 50GB+ |
 | CPU | 4 cores | 8+ cores |
+
+```
+Please note: The above requirements are for inferencing and not fine-tuning the LLM
+```
 
 ## 🚀 Quick Start
 
@@ -428,7 +432,7 @@ mypy src/
 
 ## 📝 Changelog
 
-### v1.0.0 (2024-XX-XX)
+### v1.0.0 (2025-05-21)
 - Initial release
 - Core extraction functionality
 - Chain-of-Thought prompting
@@ -445,17 +449,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Transformers library by Hugging Face
 - PEFT library for efficient fine-tuning
 - BitsAndBytes for quantization support
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/your-org/chemistry-llm-inference/issues)
-- **Documentation**: [Wiki](https://github.com/your-org/chemistry-llm-inference/wiki)
-- **Email**: support@your-org.com
-
-## 🔗 Related Projects
-
-- [Chemistry Training Pipeline](https://github.com/your-org/chemistry-training)
-- [Reaction Database Tools](https://github.com/your-org/reaction-db-tools)
 
 ---
 
