@@ -428,7 +428,7 @@ mypy src/
 
 ## 📝 Changelog
 
-### v1.0.0 (2024-XX-XX)
+### v1.0.0 (2025-05-21)
 - Initial release
 - Core extraction functionality
 - Chain-of-Thought prompting
@@ -445,17 +445,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Transformers library by Hugging Face
 - PEFT library for efficient fine-tuning
 - BitsAndBytes for quantization support
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/your-org/chemistry-llm-inference/issues)
-- **Documentation**: [Wiki](https://github.com/your-org/chemistry-llm-inference/wiki)
-- **Email**: support@your-org.com
-
-## 🔗 Related Projects
-
-- [Chemistry Training Pipeline](https://github.com/your-org/chemistry-training)
-- [Reaction Database Tools](https://github.com/your-org/reaction-db-tools)
 
 ---
 
