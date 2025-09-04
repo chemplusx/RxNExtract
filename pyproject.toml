@@ -71,7 +71,7 @@ full = [
 "Installation Guide" = "https://chemplusx.github.io/RxNExtract/INSTALLATION/"
 "Usage Guide" = "https://chemplusx.github.io/RxNExtract/USAGE/"
 "Analysis" = "https://chemplusx.github.io/RxNExtract/ANALYSIS/"
-"Changelog: = "https://chemplusx.github.io/RxNExtract/CHANGELOG/"
+"Changelog" = "https://chemplusx.github.io/RxNExtract/CHANGELOG/"
 "Bug Reports" = "https://github.com/chemplusx/RxNExtract/issues"
 "Source" = "https://github.com/chemplusx/RxNExtract"
 
