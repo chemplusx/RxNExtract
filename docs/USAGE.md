@@ -989,4 +989,4 @@ def optimized_batch_processing(procedures, batch_size=8):
 **Next Steps**: 
 - For comprehensive analysis capabilities, see [Analysis & Evaluation Guide](ANALYSIS.md)
 - For version history and updates, see [Changelog](CHANGELOG.md)
-- For contributing to the project, see [Contributing Guidelines](../CONTRIBUTING.md)
+- For contributing to the project, see [Contributing Guidelines](CONTRIBUTING.md)
