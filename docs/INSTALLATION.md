@@ -82,45 +82,7 @@ rxnextract-env\Scripts\activate
 pip install rxnextract[full]
 ```
 
-### Method 2: Conda Installation
-
-#### From Conda-Forge
-```bash
-# Basic installation
-conda install -c conda-forge rxnextract
-
-# With specific Python version
-conda create -n rxnextract python=3.9
-conda activate rxnextract
-conda install -c conda-forge rxnextract
-
-# GPU support
-conda install -c conda-forge -c nvidia rxnextract pytorch-gpu
-```
-
-#### Using Environment File
-Create `environment.yml`:
-```yaml
-name: rxnextract
-channels:
-  - conda-forge
-  - nvidia
-dependencies:
-  - python=3.9
-  - rxnextract
-  - pytorch-gpu
-  - jupyter
-  - matplotlib
-  - seaborn
-```
-
-Install:
-```bash
-conda env create -f environment.yml
-conda activate rxnextract
-```
-
-### Method 3: Docker Installation
+### Method 2: Docker Installation
 
 #### Quick Start with Docker
 ```bash
@@ -178,7 +140,7 @@ Run:
 docker-compose up
 ```
 
-### Method 4: From Source (Development)
+### Method 3: From Source (Development)
 
 #### Clone and Install
 ```bash
