@@ -3,19 +3,21 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chemistry-llm-inference"
-version = "1.0.0"
+name = "rxnextract"
+version = "1.2.2"
 authors = [
-    {name = "Your Organization", email = "contact@your-org.com"},
+    {name = "ChemPlusX", email = "xyzmadhavi@gmail.com"},
 ]
 description = "Professional chemistry reaction extraction using fine-tuned LLMs"
 readme = "README.md"
-license = {file = "LICENSE"}
+license = {text = "MIT"}
 requires-python = ">=3.8"
+keywords = ["chemistry", "reaction", "extraction", "llm", "nlp", "machine-learning"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
@@ -46,19 +48,33 @@ dev = [
     "mypy>=1.0.0",
     "pre-commit>=3.0.0",
 ]
-optional = [
+gpu = [
+    "flash-attn>=2.0.0",
+    "torch[cuda]>=2.0.0",
+    "triton>=2.0.0",
+]
+full = [
     "flash-attn>=2.0.0",
     "wandb>=0.15.0",
+    "torch[cuda]>=2.0.0",
+    "triton>=2.0.0",
+    "jupyter>=1.0.0",
+    "matplotlib>=3.5.0",
+    "seaborn>=0.11.0",
+    "plotly>=5.0.0",
+    "scikit-learn>=1.0.0",
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/your-org/chemistry-llm-inference"
-"Bug Reports" = "https://github.com/your-org/chemistry-llm-inference/issues"
-"Source" = "https://github.com/your-org/chemistry-llm-inference"
-"Documentation" = "https://github.com/your-org/chemistry-llm-inference/wiki"
+"Homepage" = "https://github.com/chemplusx/RxNExtract"
+"Documentation" = "https://github.com/chemplusx/RxNExtract/tree/master/docs"
+"Installation Guide" = "https://github.com/chemplusx/RxNExtract/blob/master/docs/INSTALLATION.md"
+"Usage Guide" = "https://github.com/chemplusx/RxNExtract/blob/master/docs/USAGE.md"
+"Bug Reports" = "https://github.com/chemplusx/RxNExtract/issues"
+"Source" = "https://github.com/chemplusx/RxNExtract"
 
 [project.scripts]
-chemistry-llm = "chemistry_llm.cli.interface:main"
+rxnextract = "chemistry_llm.cli.interface:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
