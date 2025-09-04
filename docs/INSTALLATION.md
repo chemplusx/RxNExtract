@@ -444,18 +444,6 @@ extractor = ChemistryReactionExtractor.from_pretrained(
 
 ### Platform-Specific Issues
 
-#### Windows-Specific
-```bash
-# Use long path support
-git config --global core.longpaths true
-
-# Install Visual C++ redistributables if needed
-# Download from Microsoft website
-
-# Use Anaconda on Windows for easier dependency management
-conda install -c conda-forge rxnextract
-```
-
 #### macOS-Specific
 ```bash
 # Install Xcode command line tools
@@ -495,11 +483,6 @@ If you encounter issues not covered here:
 pip install --upgrade rxnextract
 ```
 
-### Update via Conda
-```bash
-conda update -c conda-forge rxnextract
-```
-
 ### Update Docker Images
 ```bash
 docker pull chemplusx/rxnextract:latest
@@ -517,7 +500,7 @@ pip install -e .
 - **Model files**: Downloaded models are cached locally and verified for integrity
 - **Network access**: Required only for initial model download
 - **Data privacy**: All processing is done locally; no data is sent to external servers
-- **Dependencies**: All dependencies are from trusted sources (PyPI, Conda-Forge)
+- **Dependencies**: All dependencies are from trusted sources (PyPI)
 
 For enterprise deployments, consider:
 - Using local model storage

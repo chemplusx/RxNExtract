@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rxnextract"
-version = "1.2.2"
+version = "1.2.5"
 authors = [
     {name = "ChemPlusX", email = "xyzmadhavi@gmail.com"},
 ]
@@ -67,9 +67,11 @@ full = [
 
 [project.urls]
 "Homepage" = "https://github.com/chemplusx/RxNExtract"
-"Documentation" = "https://github.com/chemplusx/RxNExtract/tree/master/docs"
-"Installation Guide" = "https://github.com/chemplusx/RxNExtract/blob/master/docs/INSTALLATION.md"
-"Usage Guide" = "https://github.com/chemplusx/RxNExtract/blob/master/docs/USAGE.md"
+"Documentation" = "https://chemplusx.github.io/RxNExtract/"
+"Installation Guide" = "https://chemplusx.github.io/RxNExtract/INSTALLATION/"
+"Usage Guide" = "https://chemplusx.github.io/RxNExtract/USAGE/"
+"Analysis" = "https://chemplusx.github.io/RxNExtract/ANALYSIS/"
+"Changelog" = "https://chemplusx.github.io/RxNExtract/CHANGELOG/"
 "Bug Reports" = "https://github.com/chemplusx/RxNExtract/issues"
 "Source" = "https://github.com/chemplusx/RxNExtract"
 
