@@ -80,10 +80,10 @@ Our complete framework achieves significant improvements over baseline methods:
 
 | Document | Description |
 |----------|-------------|
-| **[Installation & Setup Guide](docs/INSTALLATION.md)** | Detailed installation instructions, system requirements, and configuration |
-| **[Usage Guide & Examples](docs/USAGE.md)** | Comprehensive usage examples, API reference, and advanced features |
-| **[Analysis & Evaluation](docs/ANALYSIS.md)** | Complete analysis framework, metrics, and research reproducibility |
-| **[Changelog](docs/CHANGELOG.md)** | Version history and release notes |
+| **[Installation & Setup Guide](INSTALLATION.md)** | Detailed installation instructions, system requirements, and configuration |
+| **[Usage Guide & Examples](USAGE.md)** | Comprehensive usage examples, API reference, and advanced features |
+| **[Analysis & Evaluation](ANALYSIS.md)** | Complete analysis framework, metrics, and research reproducibility |
+| **[Changelog](CHANGELOG.md)** | Version history and release notes |
 
 ## 🔬 Research Applications
 
