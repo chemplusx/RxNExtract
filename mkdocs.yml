@@ -2,12 +2,14 @@ site_name: RxNExtract Documentation
 repo_url: https://github.com/chemplusx/RxNExtract
 site_url: https://chemplusx.github.io/RxNExtract/
 
+docs_dir: docs
+
 nav:
-  - Home: README.md
-  - Installation: docs/INSTALLATION.md
-  - Usage: docs/USAGE.md
-  - Analysis: docs/ANALYSIS.md
-  - Changelog: docs/CHANGELOG.md
+  - Home: ../README.md
+  - Installation: INSTALLATION.md
+  - Usage: USAGE.md
+  - Analysis: ANALYSIS.md
+  - Changelog: CHANGELOG.md
 
 theme:
   name: material
