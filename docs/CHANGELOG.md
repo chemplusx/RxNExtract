@@ -5,13 +5,12 @@ All notable changes to the RxNExtract project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.2.5] - 2025-09-03
 
 ### Added
 - PyPI package distribution for easy installation
 - Docker containerization with GPU support
 - HuggingFace model hub integration
-- Conda-Forge recipe for cross-platform installation
 - Interactive Jupyter notebook examples
 - Web API integration examples
 - Enhanced documentation with comprehensive guides

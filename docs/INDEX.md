@@ -15,7 +15,7 @@ A professional-grade system for extracting chemical reaction information from pr
 - **Multiple Interfaces**: CLI, interactive mode, batch processing, and programmatic API
 - **Memory Efficient**: 4-bit quantization support for deployment on various hardware
 - **Comprehensive Analysis**: Error analysis, ablation studies, statistical testing, and uncertainty quantification
-- **Easy Installation**: One-command installation via PyPI, Conda, or Docker
+- **Easy Installation**: One-command installation via PyPI, or Docker
 
 ## 🚀 Quick Start
 
@@ -103,7 +103,7 @@ Perfect for:
 - 📧 **Email**: support@rxnextract.org
 
 ### For Experimental Chemists
-- 🎯 **One-click installations** via PyPI and Conda
+- 🎯 **One-click installations** via PyPI and docker
 - 🐳 **Docker containers** for consistent environments
 - 📖 **User-friendly tutorials** and examples
 - 🎓 **Video tutorials** and webinars
@@ -180,8 +180,7 @@ study_results = ablation.run_complete_study(test_data, ground_truth)
 - Model cards with training details, performance metrics, and usage guidelines
 
 **Package Distribution**:
-- PyPI: `pip install rxnextract` 
-- Conda-Forge: `conda install -c conda-forge rxnextract`
+- PyPI: `pip install rxnextract`
 - Docker Hub: `docker pull chemplusx/rxnextract:latest`
 
 **Datasets**: Training and evaluation datasets are available at [Zenodo DOI: 10.5281/zenodo.XXXXXX](link-to-zenodo)
