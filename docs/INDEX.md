@@ -49,18 +49,13 @@ pip install rxnextract[gpu]           # GPU support
 pip install rxnextract[full]          # All features
 ```
 
-### Option 2: Conda
-```bash
-conda install -c conda-forge rxnextract
-```
-
-### Option 3: Docker
+### Option 2: Docker
 ```bash
 docker pull chemplusx/rxnextract:latest
 docker run -it --gpus all chemplusx/rxnextract:latest
 ```
 
-### Option 4: From Source
+### Option 3: From Source
 ```bash
 git clone https://github.com/chemplusx/RxNExtract.git
 cd RxNExtract
