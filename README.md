@@ -227,7 +227,7 @@ See our [Contributing Guidelines](CONTRIBUTING.md) for detailed instructions.
 - **Documentation**: https://docs.rxnextract.org
 - **PyPI Package**: https://pypi.org/project/rxnextract/
 - **Docker Images**: https://hub.docker.com/r/chemplusx/rxnextract
-- **HuggingFace Models**: https://huggingface.co/chemplusx/rxnextract-complete
+- **HuggingFace Space**: https://huggingface.co/spaces/chemplusx/rxnextract
 - **Paper**: [Link to published paper]
 
 ---
