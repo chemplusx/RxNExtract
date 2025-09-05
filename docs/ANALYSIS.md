@@ -45,6 +45,8 @@ print(f"Role classification errors: {error_results.role_errors}")
 print(f"Condition extraction errors: {error_results.condition_errors}")
 ```
 
+### Qualitative Analysis of Reaction Type Extraction
+
 ![Extraction Examples](extraction_examples.png)
 
 ### Error Categories
