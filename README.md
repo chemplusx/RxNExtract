@@ -175,10 +175,6 @@ study_results = ablation.run_complete_study(test_data, ground_truth)
 
 **Code Repository**: All code used in this study is available under the MIT License at https://github.com/chemplusx/RxNExtract. The MIT License permits unrestricted use, modification, and distribution, making it suitable for both academic research and commercial applications.
 
-**Pre-trained Models**: 
-- HuggingFace Hub: [chemplusx/rxnextract-complete](https://huggingface.co/chemplusx/rxnextract-complete)
-- Model cards with training details, performance metrics, and usage guidelines
-
 **Package Distribution**:
 - PyPI: `pip install rxnextract` 
 - Docker Hub: `docker pull chemplusx/rxnextract:latest`
