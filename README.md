@@ -38,7 +38,7 @@ print('Conditions:', results['extracted_data']['conditions'])
 
 ### Try Without Installation
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chemplusx/RxNExtract/blob/master/examples/quickstart.ipynb)
-[![Try on HuggingFace Spaces](https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/chemplusx/rxnextract-demo)
+[![Try on HuggingFace Spaces](https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/chemplusx/rxnextract)
 
 ## 📦 Installation Options
 
