@@ -28,7 +28,7 @@ pip install rxnextract
 # Use
 python -c "
 from chemistry_llm import ChemistryReactionExtractor
-extractor = ChemistryReactionExtractor.from_pretrained('chemplusx/rxnextract-complete')
+extractor = ChemistryReactionExtractor.from_pretrained('chemplusx/rxnextract')
 procedure = 'Add 5g NaCl to 100mL water and stir for 30 minutes at room temperature.'
 results = extractor.analyze_procedure(procedure)
 print('Reactants:', results['extracted_data']['reactants'])
