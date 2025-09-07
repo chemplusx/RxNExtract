@@ -179,7 +179,7 @@ study_results = ablation.run_complete_study(test_data, ground_truth)
 - PyPI: `pip install rxnextract` 
 - Docker Hub: `docker pull chemplusx/rxnextract:latest`
 
-**Datasets**: Training and evaluation datasets are available at [Zenodo DOI: 10.5281/zenodo.XXXXXX](link-to-zenodo)
+**Datasets**: Training and evaluation datasets are available upon request
 
 **Reproducibility**: Complete analysis scripts and configuration files are provided to reproduce all results presented in the paper.
 
