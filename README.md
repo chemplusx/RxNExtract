@@ -204,10 +204,10 @@ See our [Contributing Guidelines](CONTRIBUTING.md) for detailed instructions.
 ```bibtex
 @article{rxnextract2025,
   title={RxNExtract: A Professional-Grade System for Chemical Reaction Extraction using Fine-tuned LLMs},
-  author={[Your Authors]},
-  journal={[Journal Name]},
+  author={[Kumari M.]},
+  journal={[TBD]},
   year={2025},
-  doi={[DOI]}
+  doi={[TBD]}
 }
 ```
 
