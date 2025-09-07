@@ -1,0 +1,2103 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://chemplusx.github.io/RxNExtract/INSTALLATION/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../USAGE/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Installation - RxNExtract Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installation-setup-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RxNExtract Documentation" class="md-header__button md-logo" aria-label="RxNExtract Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RxNExtract Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/chemplusx/RxNExtract" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RxNExtract Documentation" class="md-nav__button md-logo" aria-label="RxNExtract Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RxNExtract Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chemplusx/RxNExtract" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Quick Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Quick Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-pypi-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended: PyPI Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 System Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 System Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimum-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimum Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpu-requirements-optional-but-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPU Requirements (Optional but Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Installation Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 Installation Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-pypi-installation-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: PyPI Installation (Recommended)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 1: PyPI Installation (Recommended)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Variants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment-setup-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Environment Setup (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-docker-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2: Docker Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Docker Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-start-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start with Docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Variants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-compose-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Compose Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-3-from-source-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 3: From Source (Development)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 3: From Source (Development)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clone-and-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone and Install
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-setup-with-pre-commit-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Setup with Pre-commit Hooks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 Model Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Model Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-model-download-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Model Download (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-download-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-download Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#huggingface-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      HuggingFace Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HuggingFace Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-model-download" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Model Download
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-model-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Model Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Hardware Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Hardware Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gpu-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPU Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GPU Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nvidia-gpu-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      NVIDIA GPU Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpu-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU Optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Verification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-example-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Example Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-test-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Test Suite
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-cuda-out-of-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue: CUDA out of memory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-model-download-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue: Model download fails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-import-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue: Import errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-slow-performance-on-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue: Slow performance on CPU
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-specific-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform-Specific Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Platform-Specific Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      macOS-Specific
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux-Specific
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Updating
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Updating">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-via-pypi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update via PyPI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-docker-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update Docker Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update from Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Security Considerations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USAGE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ANALYSIS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Quick Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Quick Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-pypi-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended: PyPI Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 System Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 System Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimum-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimum Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpu-requirements-optional-but-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPU Requirements (Optional but Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Installation Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 Installation Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-pypi-installation-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: PyPI Installation (Recommended)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 1: PyPI Installation (Recommended)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Variants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment-setup-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Environment Setup (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-docker-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2: Docker Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 2: Docker Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-start-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start with Docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Variants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-compose-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Compose Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-3-from-source-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 3: From Source (Development)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 3: From Source (Development)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clone-and-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone and Install
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-setup-with-pre-commit-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Setup with Pre-commit Hooks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 Model Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Model Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-model-download-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Model Download (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-download-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-download Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#huggingface-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      HuggingFace Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HuggingFace Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-model-download" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Model Download
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-model-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Model Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Hardware Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Hardware Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gpu-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPU Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GPU Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nvidia-gpu-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      NVIDIA GPU Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cpu-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU Optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Verification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-example-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Example Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-test-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Test Suite
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-cuda-out-of-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue: CUDA out of memory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-model-download-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue: Model download fails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-import-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue: Import errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-slow-performance-on-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue: Slow performance on CPU
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-specific-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform-Specific Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Platform-Specific Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      macOS-Specific
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux-Specific
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Updating
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Updating">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-via-pypi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update via PyPI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-docker-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update Docker Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update from Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Security Considerations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="installation-setup-guide">Installation &amp; Setup Guide</h1>
+<p>Complete installation instructions for RxNExtract across different platforms and use cases.</p>
+<h2 id="quick-installation">🚀 Quick Installation</h2>
+<h3 id="recommended-pypi-installation">Recommended: PyPI Installation</h3>
+<pre><code class="language-bash">pip install rxnextract
+</code></pre>
+<p>That's it! For most users, this one command provides everything needed to start extracting chemical reaction information.</p>
+<h2 id="system-requirements">📋 System Requirements</h2>
+<h3 id="minimum-requirements">Minimum Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Operating System</strong></td>
+<td>Linux (Ubuntu 18.04+), macOS (10.14+), Windows 10+</td>
+</tr>
+<tr>
+<td><strong>Python</strong></td>
+<td>3.8 or higher</td>
+</tr>
+<tr>
+<td><strong>RAM</strong></td>
+<td>8GB</td>
+</tr>
+<tr>
+<td><strong>Storage</strong></td>
+<td>20GB available space</td>
+</tr>
+<tr>
+<td><strong>CPU</strong></td>
+<td>4 cores, x64 architecture</td>
+</tr>
+<tr>
+<td><strong>Internet</strong></td>
+<td>Required for model downloads</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recommended-requirements">Recommended Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Python</strong></td>
+<td>3.9+</td>
+</tr>
+<tr>
+<td><strong>RAM</strong></td>
+<td>16GB+</td>
+</tr>
+<tr>
+<td><strong>GPU</strong></td>
+<td>CUDA-compatible GPU with 12GB+ VRAM</td>
+</tr>
+<tr>
+<td><strong>Storage</strong></td>
+<td>50GB+ SSD storage</td>
+</tr>
+<tr>
+<td><strong>CPU</strong></td>
+<td>8+ cores</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gpu-requirements-optional-but-recommended">GPU Requirements (Optional but Recommended)</h3>
+<ul>
+<li><strong>NVIDIA GPU</strong> with CUDA Compute Capability 6.0+</li>
+<li><strong>CUDA</strong> version 11.0+ </li>
+<li><strong>cuDNN</strong> version 8.0+</li>
+<li><strong>GPU Memory</strong>: Minimum 4GB, Recommended 12GB+</li>
+</ul>
+<p><em>Note: All requirements are for inference only. Model fine-tuning requires significantly more resources.</em></p>
+<h2 id="installation-methods">📦 Installation Methods</h2>
+<h3 id="method-1-pypi-installation-recommended">Method 1: PyPI Installation (Recommended)</h3>
+<h4 id="basic-installation">Basic Installation</h4>
+<pre><code class="language-bash">pip install rxnextract
+</code></pre>
+<h4 id="installation-variants">Installation Variants</h4>
+<pre><code class="language-bash"># CPU-only version (smaller download)
+pip install rxnextract[cpu]
+
+# GPU-accelerated version
+pip install rxnextract[gpu]
+
+# Complete installation with all optional dependencies
+pip install rxnextract[full]
+
+# Development installation with testing tools
+pip install rxnextract[dev]
+
+# Documentation building tools
+pip install rxnextract[docs]
+</code></pre>
+<h4 id="virtual-environment-setup-recommended">Virtual Environment Setup (Recommended)</h4>
+<pre><code class="language-bash"># Create virtual environment
+python -m venv rxnextract-env
+
+# Activate virtual environment
+# Linux/macOS:
+source rxnextract-env/bin/activate
+# Windows:
+rxnextract-env\Scripts\activate
+
+# Install RxNExtract
+pip install rxnextract[full]
+</code></pre>
+<h3 id="method-2-docker-installation">Method 2: Docker Installation</h3>
+<h4 id="quick-start-with-docker">Quick Start with Docker</h4>
+<pre><code class="language-bash"># Pull latest stable image
+docker pull chemplusx/rxnextract:latest
+
+# Run interactive mode
+docker run -it --gpus all chemplusx/rxnextract:latest
+
+# Run with mounted data directory
+docker run -v /path/to/your/data:/app/data \
+  chemplusx/rxnextract:latest \
+  --input /app/data/procedures.txt \
+  --output /app/data/results.json
+</code></pre>
+<h4 id="docker-variants">Docker Variants</h4>
+<pre><code class="language-bash"># CPU-only version (smaller image)
+docker pull chemplusx/rxnextract:latest-cpu
+
+# GPU-accelerated version
+docker pull chemplusx/rxnextract:latest-gpu
+
+# Development version with additional tools
+docker pull chemplusx/rxnextract:dev
+
+# Specific version
+docker pull chemplusx/rxnextract:v1.2.0
+</code></pre>
+<h4 id="docker-compose-setup">Docker Compose Setup</h4>
+<p>Create <code>docker-compose.yml</code>:</p>
+<pre><code class="language-yaml">version: '3.8'
+services:
+  rxnextract:
+    image: chemplusx/rxnextract:latest
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+</code></pre>
+<p>Run:</p>
+<pre><code class="language-bash">docker-compose up
+</code></pre>
+<h3 id="method-3-from-source-development">Method 3: From Source (Development)</h3>
+<h4 id="clone-and-install">Clone and Install</h4>
+<pre><code class="language-bash"># Clone repository
+git clone https://github.com/chemplusx/RxNExtract.git
+cd RxNExtract
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate  # Windows
+
+# Install development dependencies
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+
+# Install in editable mode
+pip install -e .
+</code></pre>
+<h4 id="development-setup-with-pre-commit-hooks">Development Setup with Pre-commit Hooks</h4>
+<pre><code class="language-bash"># Install pre-commit
+pip install pre-commit
+
+# Install hooks
+pre-commit install
+
+# Run hooks on all files (optional)
+pre-commit run --all-files
+</code></pre>
+<h2 id="model-setup">🤖 Model Setup</h2>
+<h3 id="automatic-model-download-recommended">Automatic Model Download (Recommended)</h3>
+<p>Models are automatically downloaded on first use:</p>
+<pre><code class="language-python">from chemistry_llm import ChemistryReactionExtractor
+
+# This will automatically download the default model
+extractor = ChemistryReactionExtractor.from_pretrained(&quot;chemplusx/rxnextract-complete&quot;)
+</code></pre>
+<h3 id="pre-download-models">Pre-download Models</h3>
+<pre><code class="language-bash"># Download default model
+python -c &quot;from chemistry_llm import ChemistryReactionExtractor; ChemistryReactionExtractor.download_default_model()&quot;
+
+# Download specific model
+python -c &quot;from chemistry_llm import ChemistryReactionExtractor; ChemistryReactionExtractor.from_pretrained('chemplusx/rxnextract-base')&quot;
+</code></pre>
+<h3 id="huggingface-integration">HuggingFace Integration</h3>
+<h4 id="available-models">Available Models</h4>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+<th>Size</th>
+<th>Performance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chemplusx/rxnextract-base</code></td>
+<td>Base fine-tuned model</td>
+<td>7B params</td>
+<td>Good</td>
+</tr>
+<tr>
+<td><code>chemplusx/rxnextract-complete</code></td>
+<td>Complete framework model</td>
+<td>7B params</td>
+<td>Best</td>
+</tr>
+<tr>
+<td><code>chemplusx/rxnextract-fast</code></td>
+<td>Optimized for speed</td>
+<td>1B params</td>
+<td>Fast</td>
+</tr>
+</tbody>
+</table>
+<h4 id="manual-model-download">Manual Model Download</h4>
+<pre><code class="language-bash"># Using git lfs
+git lfs install
+git clone https://huggingface.co/chemplusx/rxnextract-complete
+
+# Using HuggingFace Hub
+pip install huggingface_hub
+python -c &quot;
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id='chemplusx/rxnextract-complete', local_dir='./models/complete')
+&quot;
+</code></pre>
+<h3 id="local-model-setup">Local Model Setup</h3>
+<p>If you have your own fine-tuned model:</p>
+<pre><code>your-model-path/
+├── adapter_config.json
+├── adapter_model.bin  # or adapter_model.safetensors
+├── tokenizer.json
+├── tokenizer_config.json
+├── special_tokens_map.json
+└── tokenizer.model  # if using SentencePiece
+</code></pre>
+<h2 id="configuration">⚙️ Configuration</h2>
+<h3 id="environment-variables">Environment Variables</h3>
+<pre><code class="language-bash"># Optional environment variables
+export RXNEXTRACT_MODEL_PATH=&quot;/path/to/your/model&quot;
+export RXNEXTRACT_CACHE_DIR=&quot;./cache&quot;
+export RXNEXTRACT_DEVICE=&quot;cuda&quot;  # or &quot;cpu&quot;, &quot;auto&quot;
+export RXNEXTRACT_LOG_LEVEL=&quot;INFO&quot;
+export HUGGINGFACE_HUB_CACHE=&quot;./hf_cache&quot;
+</code></pre>
+<h3 id="configuration-file">Configuration File</h3>
+<p>Create <code>config/config.yaml</code>:</p>
+<pre><code class="language-yaml">model:
+  default_model: &quot;chemplusx/rxnextract-complete&quot;
+  device: &quot;auto&quot;  # auto, cpu, cuda
+  max_length: 512
+  temperature: 0.1
+  top_p: 0.95
+  quantization:
+    load_in_4bit: true
+    bnb_4bit_quant_type: &quot;nf4&quot;
+    bnb_4bit_compute_dtype: &quot;float16&quot;
+
+paths:
+  model_cache: &quot;./cache/models&quot;
+  output_dir: &quot;./outputs&quot;
+  log_dir: &quot;./logs&quot;
+
+logging:
+  level: &quot;INFO&quot;
+  format: &quot;%(asctime)s - %(name)s - %(levelname)s - %(message)s&quot;
+  file: true
+
+analysis:
+  error_analysis:
+    include_cot_failures: true
+    categorize_by_complexity: true
+
+  ablation_study:
+    sample_size: 1000
+    stratified_sampling: true
+
+  statistical_analysis:
+    significance_level: 0.05
+    confidence_level: 0.95
+    bootstrap_iterations: 1000
+
+output:
+  format: &quot;json&quot;  # json, xml, yaml
+  include_raw: false
+  include_confidence: true
+  pretty_print: true
+</code></pre>
+<h2 id="hardware-optimization">🔧 Hardware Optimization</h2>
+<h3 id="gpu-setup">GPU Setup</h3>
+<h4 id="nvidia-gpu-optimization">NVIDIA GPU Optimization</h4>
+<pre><code class="language-bash"># Check CUDA availability
+python -c &quot;import torch; print(f'CUDA available: {torch.cuda.is_available()}')&quot;
+python -c &quot;import torch; print(f'CUDA devices: {torch.cuda.device_count()}')&quot;
+
+# Install CUDA-specific PyTorch (if needed)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+</code></pre>
+<h4 id="memory-optimization">Memory Optimization</h4>
+<pre><code class="language-python">from chemistry_llm import ChemistryReactionExtractor
+
+# Use 4-bit quantization for lower memory usage
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    load_in_4bit=True,
+    device=&quot;cuda&quot;
+)
+
+# Or use CPU if GPU memory is insufficient
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    device=&quot;cpu&quot;
+)
+</code></pre>
+<h3 id="cpu-optimization">CPU Optimization</h3>
+<pre><code class="language-python">import torch
+
+# Set number of CPU threads
+torch.set_num_threads(8)
+
+# Use CPU-optimized model loading
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    device=&quot;cpu&quot;,
+    torch_dtype=torch.float32  # Use float32 for better CPU performance
+)
+</code></pre>
+<h2 id="verification">✅ Verification</h2>
+<h3 id="test-installation">Test Installation</h3>
+<pre><code class="language-bash"># Basic functionality test
+python -c &quot;
+from chemistry_llm import ChemistryReactionExtractor
+print('✓ RxNExtract imported successfully')
+
+# Test model loading
+try:
+    extractor = ChemistryReactionExtractor.from_pretrained('chemplusx/rxnextract-complete')
+    print('✓ Model loaded successfully')
+except Exception as e:
+    print(f'✗ Model loading failed: {e}')
+&quot;
+</code></pre>
+<h3 id="run-example-extraction">Run Example Extraction</h3>
+<pre><code class="language-python">from chemistry_llm import ChemistryReactionExtractor
+
+# Test basic extraction
+extractor = ChemistryReactionExtractor.from_pretrained(&quot;chemplusx/rxnextract-complete&quot;)
+procedure = &quot;Add 5g NaCl to 100mL water and stir for 30 minutes.&quot;
+
+try:
+    result = extractor.analyze_procedure(procedure)
+    print(&quot;✓ Extraction test passed&quot;)
+    print(f&quot;Found {len(result['extracted_data']['reactants'])} reactants&quot;)
+except Exception as e:
+    print(f&quot;✗ Extraction test failed: {e}&quot;)
+</code></pre>
+<h3 id="run-test-suite">Run Test Suite</h3>
+<pre><code class="language-bash"># Install test dependencies
+pip install pytest pytest-cov
+
+# Run basic tests
+python -m pytest tests/test_basic.py -v
+
+# Run full test suite
+python -m pytest tests/ -v
+
+# Run with coverage
+python -m pytest tests/ --cov=chemistry_llm --cov-report=html
+</code></pre>
+<h2 id="troubleshooting">🚨 Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<h4 id="issue-cuda-out-of-memory">Issue: CUDA out of memory</h4>
+<p><strong>Solution</strong>:</p>
+<pre><code class="language-python"># Use 4-bit quantization
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    load_in_4bit=True
+)
+
+# Or use CPU
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    device=&quot;cpu&quot;
+)
+</code></pre>
+<h4 id="issue-model-download-fails">Issue: Model download fails</h4>
+<p><strong>Solution</strong>:</p>
+<pre><code class="language-bash"># Set HuggingFace cache directory
+export HF_HOME=&quot;./hf_cache&quot;
+
+# Use manual download
+huggingface-cli download chemplusx/rxnextract-complete
+
+# Check internet connection and try again
+ping huggingface.co
+</code></pre>
+<h4 id="issue-import-errors">Issue: Import errors</h4>
+<p><strong>Solution</strong>:</p>
+<pre><code class="language-bash"># Ensure all dependencies are installed
+pip install --upgrade rxnextract[full]
+
+# Check Python version
+python --version  # Should be 3.8+
+
+# Check installation
+pip show rxnextract
+</code></pre>
+<h4 id="issue-slow-performance-on-cpu">Issue: Slow performance on CPU</h4>
+<p><strong>Solution</strong>:</p>
+<pre><code class="language-python">import torch
+
+# Optimize CPU performance
+torch.set_num_threads(min(8, torch.get_num_threads()))
+
+# Use smaller model for faster inference
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-fast&quot;
+)
+</code></pre>
+<h3 id="platform-specific-issues">Platform-Specific Issues</h3>
+<h4 id="macos-specific">macOS-Specific</h4>
+<pre><code class="language-bash"># Install Xcode command line tools
+xcode-select --install
+
+# Use Homebrew for dependencies
+brew install python@3.9
+
+# For Apple Silicon Macs, ensure compatible PyTorch
+pip install torch torchvision torchaudio
+</code></pre>
+<h4 id="linux-specific">Linux-Specific</h4>
+<pre><code class="language-bash"># Install system dependencies
+sudo apt-get update
+sudo apt-get install python3-dev build-essential
+
+# For GPU support
+sudo apt-get install nvidia-driver-470 nvidia-cuda-toolkit
+</code></pre>
+<h3 id="getting-help">Getting Help</h3>
+<p>If you encounter issues not covered here:</p>
+<ol>
+<li><strong>Check the FAQ</strong>: <a href="FAQ.md">docs/FAQ.md</a></li>
+<li><strong>Search existing issues</strong>: <a href="https://github.com/chemplusx/RxNExtract/issues">GitHub Issues</a></li>
+<li><strong>Create a new issue</strong>: Include your system info, Python version, and error messages</li>
+<li><strong>Join discussions</strong>: <a href="https://github.com/chemplusx/RxNExtract/discussions">GitHub Discussions</a></li>
+<li><strong>Contact support</strong>: support@rxnextract.org</li>
+</ol>
+<h2 id="updating">🔄 Updating</h2>
+<h3 id="update-via-pypi">Update via PyPI</h3>
+<pre><code class="language-bash">pip install --upgrade rxnextract
+</code></pre>
+<h3 id="update-docker-images">Update Docker Images</h3>
+<pre><code class="language-bash">docker pull chemplusx/rxnextract:latest
+</code></pre>
+<h3 id="update-from-source">Update from Source</h3>
+<pre><code class="language-bash">cd RxNExtract
+git pull origin main
+pip install -e .
+</code></pre>
+<h2 id="security-considerations">🔒 Security Considerations</h2>
+<ul>
+<li><strong>Model files</strong>: Downloaded models are cached locally and verified for integrity</li>
+<li><strong>Network access</strong>: Required only for initial model download</li>
+<li><strong>Data privacy</strong>: All processing is done locally; no data is sent to external servers</li>
+<li><strong>Dependencies</strong>: All dependencies are from trusted sources (PyPI)</li>
+</ul>
+<p>For enterprise deployments, consider:
+- Using local model storage
+- Network-isolated environments
+- Custom Docker images with pre-downloaded models</p>
+<hr />
+<p><strong>Next Steps</strong>: After installation, see the <a href="../USAGE/">Usage Guide</a> for detailed examples and API documentation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

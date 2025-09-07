@@ -1,0 +1,2257 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://chemplusx.github.io/RxNExtract/USAGE/">
+      
+      
+        <link rel="prev" href="../INSTALLATION/">
+      
+      
+        <link rel="next" href="../ANALYSIS/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Usage - RxNExtract Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#usage-guide-examples" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RxNExtract Documentation" class="md-header__button md-logo" aria-label="RxNExtract Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RxNExtract Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Usage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/chemplusx/RxNExtract" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RxNExtract Documentation" class="md-nav__button md-logo" aria-label="RxNExtract Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RxNExtract Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chemplusx/RxNExtract" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../INSTALLATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Quick Start Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Quick Start Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-python-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Python Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-line-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Line Interface
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programmatic-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 Programmatic API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📖 Programmatic API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chemistryreactionextractor-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChemistryReactionExtractor Class
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChemistryReactionExtractor Class">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialization Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analyze_procedureprocedure_text-return_rawfalse-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      analyze_procedure(procedure_text, return_raw=False, **kwargs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extract_reactionprocedure_text-generation_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      extract_reaction(procedure_text, **generation_params)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch_analyzeprocedures_list-batch_size8-show_progresstrue" class="md-nav__link">
+    <span class="md-ellipsis">
+      batch_analyze(procedures_list, batch_size=8, show_progress=True)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-interface_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Command Line Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Command Line Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interactive-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Batch Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-file-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input File Formats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-cli-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced CLI Options
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-usage-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Advanced Usage Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Advanced Usage Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-document-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Document Processing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-with-scientific-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration with Scientific Libraries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling-and-robustness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling and Robustness
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-evaluation-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Analysis &amp; Evaluation Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Analysis &amp; Evaluation Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ablation-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablation Studies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ablation Studies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-ablation-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Ablation Configurations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncertainty-quantification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uncertainty Quantification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metrics-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metrics Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-functions-and-helpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Utility Functions and Helpers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Utility Functions and Helpers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xml-parsing-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      XML Parsing and Validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-and-memory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device and Memory Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-prompt-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Prompt Engineering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-formats-and-post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Output Formats and Post-Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Output Formats and Post-Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structured-output-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structured Output Formats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-Processing and Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Integration Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 Integration Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-notebook-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jupyter Notebook Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web API Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Performance Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Performance Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memory-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-processing-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Processing Optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ANALYSIS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Quick Start Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Quick Start Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-python-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Python Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command-line-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Line Interface
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programmatic-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 Programmatic API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📖 Programmatic API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chemistryreactionextractor-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChemistryReactionExtractor Class
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChemistryReactionExtractor Class">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initialization Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analyze_procedureprocedure_text-return_rawfalse-kwargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      analyze_procedure(procedure_text, return_raw=False, **kwargs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extract_reactionprocedure_text-generation_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      extract_reaction(procedure_text, **generation_params)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch_analyzeprocedures_list-batch_size8-show_progresstrue" class="md-nav__link">
+    <span class="md-ellipsis">
+      batch_analyze(procedures_list, batch_size=8, show_progress=True)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-interface_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Command Line Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Command Line Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interactive-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Batch Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-file-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input File Formats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-cli-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced CLI Options
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-usage-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Advanced Usage Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Advanced Usage Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-document-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Document Processing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-with-scientific-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration with Scientific Libraries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling-and-robustness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling and Robustness
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-evaluation-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Analysis &amp; Evaluation Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Analysis &amp; Evaluation Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ablation-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablation Studies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ablation Studies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-ablation-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Ablation Configurations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncertainty-quantification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uncertainty Quantification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metrics-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metrics Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-functions-and-helpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Utility Functions and Helpers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Utility Functions and Helpers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xml-parsing-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      XML Parsing and Validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-and-memory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device and Memory Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-prompt-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Prompt Engineering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-formats-and-post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Output Formats and Post-Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Output Formats and Post-Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structured-output-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structured Output Formats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-Processing and Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Integration Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 Integration Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-notebook-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jupyter Notebook Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web API Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Performance Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Performance Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memory-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-processing-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Processing Optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="usage-guide-examples">Usage Guide &amp; Examples</h1>
+<p>Comprehensive guide to using RxNExtract for chemical reaction extraction, from basic usage to advanced analysis.</p>
+<h2 id="quick-start-examples">🚀 Quick Start Examples</h2>
+<h3 id="basic-python-usage">Basic Python Usage</h3>
+<pre><code class="language-python">from chemistry_llm import ChemistryReactionExtractor
+
+# Initialize extractor with pre-trained model
+extractor = ChemistryReactionExtractor.from_pretrained(&quot;chemplusx/rxnextract-complete&quot;)
+
+# Analyze a chemical procedure
+procedure = &quot;&quot;&quot;
+Add 2.5 g of benzoic acid to 50 mL of ethanol. 
+Heat the mixture to reflux for 4 hours.
+Cool and filter to obtain the product.
+&quot;&quot;&quot;
+
+# Extract reaction information
+results = extractor.analyze_procedure(procedure)
+
+# Access structured data
+data = results['extracted_data']
+print(&quot;Reactants:&quot;, data['reactants'])
+print(&quot;Products:&quot;, data['products'])
+print(&quot;Conditions:&quot;, data['conditions'])
+print(&quot;Reagents:&quot;, data['reagents'])
+</code></pre>
+<h3 id="command-line-interface">Command Line Interface</h3>
+<pre><code class="language-bash"># Interactive mode for real-time analysis
+rxnextract --interactive
+
+# Analyze single procedure
+rxnextract --procedure &quot;Add 5g NaCl to 100mL water and stir for 30 minutes&quot;
+
+# Batch processing from file
+rxnextract --input procedures.txt --output results.json
+
+# With custom model
+rxnextract --model-path ./custom-model --input data.txt --output results.json
+</code></pre>
+<h2 id="programmatic-api">📖 Programmatic API</h2>
+<h3 id="chemistryreactionextractor-class">ChemistryReactionExtractor Class</h3>
+<h4 id="initialization-options">Initialization Options</h4>
+<pre><code class="language-python">from chemistry_llm import ChemistryReactionExtractor
+
+# Option 1: Load from HuggingFace Hub (recommended)
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    device=&quot;cuda&quot;,  # &quot;cpu&quot;, &quot;cuda&quot;, &quot;auto&quot;
+    load_in_4bit=True,  # Memory optimization
+    temperature=0.1,
+    max_length=512
+)
+
+# Option 2: Load from local model path
+extractor = ChemistryReactionExtractor(
+    model_path=&quot;./path/to/local/model&quot;,
+    device=&quot;auto&quot;,
+    config={
+        &quot;temperature&quot;: 0.1,
+        &quot;top_p&quot;: 0.95,
+        &quot;max_new_tokens&quot;: 512
+    }
+)
+
+# Option 3: Advanced configuration
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    torch_dtype=&quot;float16&quot;,
+    device_map=&quot;auto&quot;,  # Automatic device assignment
+    quantization_config={
+        &quot;load_in_4bit&quot;: True,
+        &quot;bnb_4bit_quant_type&quot;: &quot;nf4&quot;,
+        &quot;bnb_4bit_compute_dtype&quot;: &quot;float16&quot;
+    }
+)
+</code></pre>
+<h4 id="core-methods">Core Methods</h4>
+<h5 id="analyze_procedureprocedure_text-return_rawfalse-kwargs"><code>analyze_procedure(procedure_text, return_raw=False, **kwargs)</code></h5>
+<p>Main method for extracting reaction information.</p>
+<pre><code class="language-python"># Basic usage
+results = extractor.analyze_procedure(procedure_text)
+
+# With raw output included
+results = extractor.analyze_procedure(
+    procedure_text, 
+    return_raw=True,
+    temperature=0.05  # Override default temperature
+)
+
+# Return structure
+{
+    'extracted_data': {
+        'reactants': [{'name': 'benzoic acid', 'amount': '2.5 g', ...}],
+        'products': [{'name': 'product', 'yield': '84%', ...}],
+        'reagents': [{'name': 'HCl', 'amount': '10 mL', ...}],
+        'solvents': [{'name': 'ethanol', 'amount': '50 mL', ...}],
+        'conditions': {
+            'temperature': 'reflux',
+            'time': '4 hours',
+            'atmosphere': 'ambient'
+        },
+        'workup': ['Cool', 'filter', 'wash with cold water']
+    },
+    'confidence': 0.89,
+    'processing_time': 2.3,
+    'raw_output': '...'  # If return_raw=True
+}
+</code></pre>
+<h5 id="extract_reactionprocedure_text-generation_params"><code>extract_reaction(procedure_text, **generation_params)</code></h5>
+<p>Low-level extraction method for advanced users.</p>
+<pre><code class="language-python">raw_output = extractor.extract_reaction(
+    procedure_text,
+    temperature=0.1,
+    max_new_tokens=512,
+    do_sample=True,
+    top_p=0.95
+)
+</code></pre>
+<h5 id="batch_analyzeprocedures_list-batch_size8-show_progresstrue"><code>batch_analyze(procedures_list, batch_size=8, show_progress=True)</code></h5>
+<p>Efficient batch processing with progress tracking.</p>
+<pre><code class="language-python">procedures = [
+    &quot;Mix compound A with solvent B...&quot;,
+    &quot;Heat the reaction mixture to 150°C...&quot;,
+    &quot;Add catalyst C slowly while stirring...&quot;
+]
+
+# Batch processing
+results = extractor.batch_analyze(
+    procedures,
+    batch_size=4,
+    show_progress=True
+)
+
+# Results is a list of analysis results
+for i, result in enumerate(results):
+    print(f&quot;Procedure {i+1}: {len(result['extracted_data']['reactants'])} reactants&quot;)
+</code></pre>
+<h2 id="command-line-interface_1">🖥️ Command Line Interface</h2>
+<h3 id="interactive-mode">Interactive Mode</h3>
+<p>Start an interactive session for real-time analysis:</p>
+<pre><code class="language-bash">rxnextract --interactive
+</code></pre>
+<p>Features:
+- Real-time procedure input and analysis
+- Formatted output display with syntax highlighting
+- Session history and recall
+- Error handling and recovery
+- Multi-line input support</p>
+<p>Interactive commands:</p>
+<pre><code>&gt; analyze: Add 5g NaCl to water
+&gt; history: Show previous analyses
+&gt; save results.json: Save current session
+&gt; load previous.json: Load previous session
+&gt; config: Show current configuration
+&gt; help: Show available commands
+&gt; quit: Exit interactive mode
+</code></pre>
+<h3 id="batch-processing">Batch Processing</h3>
+<p>Process multiple procedures from various input formats:</p>
+<pre><code class="language-bash"># Basic batch processing
+rxnextract --input procedures.txt --output results.json
+
+# With progress bar and custom batch size
+rxnextract --input procedures.txt --output results.json --batch-size 16 --progress
+
+# Specify model and device
+rxnextract --model chemplusx/rxnextract-complete --device cuda --input data.txt
+
+# With confidence filtering
+rxnextract --input procedures.txt --output results.json --min-confidence 0.8
+
+# Custom output format
+rxnextract --input procedures.txt --output results.xml --format xml
+</code></pre>
+<h4 id="input-file-formats">Input File Formats</h4>
+<p><strong>Text file</strong> (<code>.txt</code>) - One procedure per line:</p>
+<pre><code>Add 5g NaCl to 100mL water and stir for 30 minutes.
+Reflux the mixture of benzene and AlCl3 for 2 hours at 80°C.
+Cool the solution to room temperature and filter the precipitate.
+</code></pre>
+<p><strong>JSON file</strong> (<code>.json</code>) - Structured input:</p>
+<pre><code class="language-json">[
+    {
+        &quot;id&quot;: &quot;proc_001&quot;,
+        &quot;procedure&quot;: &quot;Add 5g NaCl to 100mL water and stir for 30 minutes.&quot;,
+        &quot;metadata&quot;: {&quot;source&quot;: &quot;paper_1&quot;, &quot;page&quot;: 15}
+    },
+    {
+        &quot;id&quot;: &quot;proc_002&quot;, 
+        &quot;procedure&quot;: &quot;Reflux the mixture of benzene and AlCl3 for 2 hours at 80°C.&quot;,
+        &quot;metadata&quot;: {&quot;source&quot;: &quot;paper_2&quot;, &quot;page&quot;: 8}
+    }
+]
+</code></pre>
+<p><strong>CSV file</strong> (<code>.csv</code>) - Tabular format:</p>
+<pre><code class="language-csv">id,procedure,source,page
+proc_001,&quot;Add 5g NaCl to 100mL water and stir for 30 minutes.&quot;,paper_1,15
+proc_002,&quot;Reflux the mixture of benzene and AlCl3 for 2 hours at 80°C.&quot;,paper_2,8
+</code></pre>
+<h3 id="advanced-cli-options">Advanced CLI Options</h3>
+<pre><code class="language-bash"># Full list of CLI options
+rxnextract --help
+
+# Memory optimization
+rxnextract --input data.txt --load-in-4bit --max-memory 8GB
+
+# Custom configuration
+rxnextract --config custom_config.yaml --input procedures.txt
+
+# Parallel processing
+rxnextract --input data.txt --workers 4 --output results.json
+
+# Verbose logging
+rxnextract --input data.txt --log-level DEBUG --log-file extraction.log
+</code></pre>
+<h2 id="advanced-usage-examples">📊 Advanced Usage Examples</h2>
+<h3 id="custom-configuration">Custom Configuration</h3>
+<pre><code class="language-python">from chemistry_llm import ChemistryReactionExtractor
+from chemistry_llm.utils import setup_logging
+
+# Setup custom logging
+setup_logging(level=&quot;INFO&quot;, log_file=&quot;extraction.log&quot;)
+
+# Custom configuration
+config = {
+    &quot;model&quot;: {
+        &quot;temperature&quot;: 0.05,
+        &quot;top_p&quot;: 0.9,
+        &quot;max_new_tokens&quot;: 1024,
+        &quot;repetition_penalty&quot;: 1.1
+    },
+    &quot;prompts&quot;: {
+        &quot;use_cot&quot;: True,
+        &quot;cot_steps&quot;: [
+            &quot;Identify all chemical compounds&quot;,
+            &quot;Determine reaction roles&quot;,
+            &quot;Extract reaction conditions&quot;,
+            &quot;Identify products and yields&quot;
+        ]
+    },
+    &quot;output&quot;: {
+        &quot;include_confidence&quot;: True,
+        &quot;include_reasoning&quot;: True,
+        &quot;xml_pretty_print&quot;: True
+    }
+}
+
+# Initialize with custom config
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    config=config
+)
+</code></pre>
+<h3 id="multi-document-processing">Multi-Document Processing</h3>
+<pre><code class="language-python">import json
+from pathlib import Path
+from chemistry_llm import ChemistryReactionExtractor
+
+extractor = ChemistryReactionExtractor.from_pretrained(&quot;chemplusx/rxnextract-complete&quot;)
+
+def process_documents(input_dir, output_dir):
+    &quot;&quot;&quot;Process all text files in a directory&quot;&quot;&quot;
+    input_path = Path(input_dir)
+    output_path = Path(output_dir)
+    output_path.mkdir(exist_ok=True)
+
+    for txt_file in input_path.glob(&quot;*.txt&quot;):
+        print(f&quot;Processing {txt_file.name}...&quot;)
+
+        with open(txt_file, 'r', encoding='utf-8') as f:
+            procedures = [line.strip() for line in f if line.strip()]
+
+        # Batch process
+        results = extractor.batch_analyze(procedures, batch_size=8)
+
+        # Save results
+        output_file = output_path / f&quot;{txt_file.stem}_results.json&quot;
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+
+        print(f&quot;Saved {len(results)} results to {output_file}&quot;)
+
+# Process all documents
+process_documents(&quot;./input_docs&quot;, &quot;./output_results&quot;)
+</code></pre>
+<h3 id="integration-with-scientific-libraries">Integration with Scientific Libraries</h3>
+<pre><code class="language-python">import pandas as pd
+from chemistry_llm import ChemistryReactionExtractor
+from rdkit import Chem
+from rdkit.Chem import Draw
+
+# Initialize extractor
+extractor = ChemistryReactionExtractor.from_pretrained(&quot;chemplusx/rxnextract-complete&quot;)
+
+def analyze_and_visualize(procedures_df):
+    &quot;&quot;&quot;Analyze procedures and create molecular visualizations&quot;&quot;&quot;
+    results = []
+
+    for idx, row in procedures_df.iterrows():
+        # Extract reaction information
+        result = extractor.analyze_procedure(row['procedure'])
+
+        # Process reactants for visualization
+        reactant_smiles = []
+        for reactant in result['extracted_data']['reactants']:
+            if 'smiles' in reactant:
+                reactant_smiles.append(reactant['smiles'])
+
+        # Create molecular visualization
+        if reactant_smiles:
+            mols = [Chem.MolFromSmiles(smiles) for smiles in reactant_smiles]
+            img = Draw.MolsToGridImage(mols, molsPerRow=3)
+            img.save(f&quot;reaction_{idx}_molecules.png&quot;)
+
+        # Store results
+        results.append({
+            'procedure_id': row['id'],
+            'reactants_count': len(result['extracted_data']['reactants']),
+            'products_count': len(result['extracted_data']['products']),
+            'confidence': result['confidence'],
+            'extraction_result': result
+        })
+
+    return pd.DataFrame(results)
+
+# Example usage
+procedures_df = pd.read_csv(&quot;procedures.csv&quot;)
+analysis_results = analyze_and_visualize(procedures_df)
+analysis_results.to_csv(&quot;analysis_summary.csv&quot;, index=False)
+</code></pre>
+<h3 id="error-handling-and-robustness">Error Handling and Robustness</h3>
+<pre><code class="language-python">from chemistry_llm import ChemistryReactionExtractor
+import logging
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+def robust_extraction(procedures, max_retries=3):
+    &quot;&quot;&quot;Robust extraction with error handling and retries&quot;&quot;&quot;
+    extractor = ChemistryReactionExtractor.from_pretrained(&quot;chemplusx/rxnextract-complete&quot;)
+    results = []
+
+    for i, procedure in enumerate(procedures):
+        success = False
+        retries = 0
+
+        while not success and retries &lt; max_retries:
+            try:
+                result = extractor.analyze_procedure(procedure)
+
+                # Validate result
+                if result['confidence'] &lt; 0.5:
+                    logger.warning(f&quot;Low confidence ({result['confidence']:.2f}) for procedure {i}&quot;)
+
+                results.append({
+                    'procedure_index': i,
+                    'success': True,
+                    'result': result,
+                    'retries_used': retries
+                })
+                success = True
+
+            except Exception as e:
+                retries += 1
+                logger.error(f&quot;Extraction failed for procedure {i} (attempt {retries}): {e}&quot;)
+
+                if retries &gt;= max_retries:
+                    results.append({
+                        'procedure_index': i,
+                        'success': False,
+                        'error': str(e),
+                        'retries_used': retries
+                    })
+
+    return results
+</code></pre>
+<h2 id="analysis-evaluation-framework">🔍 Analysis &amp; Evaluation Framework</h2>
+<h3 id="error-analysis">Error Analysis</h3>
+<p>Systematic analysis of extraction errors across different categories:</p>
+<pre><code class="language-python">from chemistry_llm.analysis import ErrorAnalyzer
+
+# Initialize error analyzer
+error_analyzer = ErrorAnalyzer()
+
+# Load your predictions and ground truth
+predictions = load_predictions(&quot;model_predictions.json&quot;)
+ground_truth = load_ground_truth(&quot;ground_truth.json&quot;)
+
+# Comprehensive error analysis
+error_results = error_analyzer.analyze_prediction_errors(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    method_name=&quot;RxNExtract-Complete&quot;
+)
+
+# Analyze specific error categories
+entity_errors = error_analyzer.analyze_entity_errors(predictions, ground_truth)
+role_errors = error_analyzer.analyze_role_classification_errors(predictions, ground_truth)
+condition_errors = error_analyzer.analyze_condition_extraction_errors(predictions, ground_truth)
+
+# Chain-of-Thought failure analysis
+cot_failures = error_analyzer.analyze_cot_failures(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    raw_outputs=raw_model_outputs
+)
+
+# Generate comprehensive error report
+report = error_analyzer.generate_error_report(
+    error_results, 
+    output_file=&quot;comprehensive_error_analysis.txt&quot;
+)
+
+print(&quot;Error Analysis Summary:&quot;)
+print(f&quot;Total errors analyzed: {error_results.total_errors}&quot;)
+print(f&quot;Entity recognition errors: {error_results.entity_errors}&quot;)
+print(f&quot;Role classification errors: {error_results.role_errors}&quot;)
+print(f&quot;Condition extraction errors: {error_results.condition_errors}&quot;)
+</code></pre>
+<h3 id="ablation-studies">Ablation Studies</h3>
+<p>Systematic component-level performance analysis:</p>
+<pre><code class="language-python">from chemistry_llm.analysis import AblationStudy
+
+# Initialize ablation study
+ablation = AblationStudy(model_path=&quot;./model&quot;)
+
+# Run complete ablation study
+study_results = ablation.run_complete_study(
+    test_data=test_procedures,
+    ground_truth=ground_truth,
+    sample_size=1000,
+    stratified=True,  # Stratify by reaction complexity
+    random_state=42
+)
+
+# Analyze dynamic prompt components
+dynamic_analysis = ablation.analyze_dynamic_prompt_components(
+    test_sample=test_procedures[:100],
+    truth_sample=ground_truth[:100]
+)
+
+# Component contribution analysis
+component_contributions = ablation.analyze_component_contributions(
+    study_results
+)
+
+# Generate ablation report
+report = ablation.generate_ablation_report(
+    study_results, 
+    output_file=&quot;ablation_study_report.txt&quot;
+)
+
+# Export results for further analysis
+df = ablation.export_results_to_csv(study_results, &quot;ablation_results.csv&quot;)
+
+print(&quot;Ablation Study Results:&quot;)
+for config, metrics in study_results.items():
+    print(f&quot;{config}: CRA = {metrics.cra:.3f}, F1 = {metrics.entity_f1:.3f}&quot;)
+</code></pre>
+<h4 id="available-ablation-configurations">Available Ablation Configurations</h4>
+<ul>
+<li><strong>Direct Extraction</strong>: Basic extraction without enhancements</li>
+<li><strong>Structured Output</strong>: XML-structured output format</li>
+<li><strong>Meta Prompt</strong>: Enhanced prompt engineering</li>
+<li><strong>Chain-of-Thought</strong>: Step-by-step reasoning</li>
+<li><strong>CoT + Reflection</strong>: Chain-of-thought with self-reflection</li>
+<li><strong>Self-Grounding</strong>: Entity validation and correction</li>
+<li><strong>Complete Framework</strong>: All components combined</li>
+<li><strong>Iterative Refinement</strong>: Multi-pass extraction</li>
+</ul>
+<h3 id="statistical-analysis">Statistical Analysis</h3>
+<p>Comprehensive statistical testing and significance analysis:</p>
+<pre><code class="language-python">from chemistry_llm.analysis import StatisticalAnalyzer
+
+# Initialize statistical analyzer
+stats_analyzer = StatisticalAnalyzer()
+
+# Load results from different methods
+baseline_results = load_results(&quot;baseline_predictions.json&quot;)
+improved_results = load_results(&quot;rxnextract_predictions.json&quot;)
+
+# Pairwise method comparison
+comparison = stats_analyzer.perform_pairwise_comparison(
+    method1_results=[r['cra'] for r in baseline_results],
+    method2_results=[r['cra'] for r in improved_results],
+    method1_name=&quot;Baseline&quot;,
+    method2_name=&quot;RxNExtract&quot;,
+    test_type=&quot;paired_t&quot;  # or &quot;wilcoxon&quot;, &quot;mann_whitney&quot;
+)
+
+print(f&quot;Statistical Comparison Results:&quot;)
+print(f&quot;p-value: {comparison['p_value']:.6f}&quot;)
+print(f&quot;Effect size (Cohen's d): {comparison['effect_size']:.3f}&quot;)
+print(f&quot;Statistically significant: {comparison['significant']}&quot;)
+
+# McNemar's test for classification performance
+baseline_correct = [is_correct(pred, truth) for pred, truth in zip(baseline_results, ground_truth)]
+improved_correct = [is_correct(pred, truth) for pred, truth in zip(improved_results, ground_truth)]
+
+mcnemar_result = stats_analyzer.perform_mcnemar_test(
+    method1_correct=baseline_correct,
+    method2_correct=improved_correct,
+    method1_name=&quot;Baseline&quot;,
+    method2_name=&quot;RxNExtract&quot;
+)
+
+# ANOVA for multiple method comparison
+methods_data = {
+    'Baseline': [r['cra'] for r in baseline_results],
+    'CoT-Only': [r['cra'] for r in cot_results],
+    'RxNExtract': [r['cra'] for r in improved_results]
+}
+
+anova_results = stats_analyzer.perform_anova(
+    groups=methods_data,
+    post_hoc=True  # Include post-hoc pairwise comparisons
+)
+
+# Generate statistical report
+stats_report = stats_analyzer.generate_statistical_report(
+    {
+        'pairwise_comparisons': {'baseline_vs_rxnextract': comparison},
+        'mcnemar_tests': {'classification_performance': mcnemar_result},
+        'anova_results': anova_results
+    },
+    output_file=&quot;statistical_analysis_report.txt&quot;
+)
+</code></pre>
+<h3 id="uncertainty-quantification">Uncertainty Quantification</h3>
+<p>Confidence calibration and uncertainty analysis:</p>
+<pre><code class="language-python">from chemistry_llm.analysis import UncertaintyQuantifier
+
+# Initialize uncertainty quantifier
+uncertainty = UncertaintyQuantifier()
+
+# Extract confidence scores from predictions
+confidences = [pred['confidence'] for pred in predictions]
+accuracies = [1.0 if is_correct(pred, truth) else 0.0 
+              for pred, truth in zip(predictions, ground_truth)]
+
+# Calculate calibration metrics
+calibration_metrics = uncertainty.calculate_calibration_metrics(
+    confidences=confidences,
+    accuracies=accuracies,
+    n_bins=10
+)
+
+print(f&quot;Calibration Metrics:&quot;)
+print(f&quot;Expected Calibration Error (ECE): {calibration_metrics.ece:.4f}&quot;)
+print(f&quot;Brier Score: {calibration_metrics.brier_score:.4f}&quot;)
+print(f&quot;Reliability: {calibration_metrics.reliability:.4f}&quot;)
+
+# Perform temperature scaling for calibration
+calibrated_probs, optimal_temperature = uncertainty.perform_temperature_scaling(
+    validation_logits=validation_logits,
+    validation_labels=validation_labels,
+    test_logits=test_logits
+)
+
+print(f&quot;Optimal temperature: {optimal_temperature:.3f}&quot;)
+
+# Confidence-stratified performance analysis
+confidence_analysis = uncertainty.analyze_confidence_stratified_performance(
+    confidences=confidences,
+    accuracies=accuracies,
+    n_strata=5
+)
+
+# Generate reliability diagram
+reliability_fig = uncertainty.generate_reliability_diagram(
+    confidences=confidences,
+    accuracies=accuracies,
+    save_path=&quot;reliability_diagram.png&quot;
+)
+
+# Comprehensive uncertainty analysis
+uncertainty_results = uncertainty.analyze_prediction_uncertainty(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    confidence_threshold=0.8
+)
+</code></pre>
+<h3 id="metrics-calculator">Metrics Calculator</h3>
+<p>Comprehensive performance metrics calculation:</p>
+<pre><code class="language-python">from chemistry_llm.analysis import MetricsCalculator
+
+# Initialize metrics calculator
+metrics_calc = MetricsCalculator()
+
+# Calculate comprehensive metrics
+comprehensive_metrics = metrics_calc.calculate_comprehensive_metrics(
+    predictions=predictions,
+    ground_truth=ground_truth
+)
+
+print(&quot;Performance Metrics:&quot;)
+print(f&quot;Complete Reaction Accuracy (CRA): {comprehensive_metrics['cra']:.3f}&quot;)
+print(f&quot;Entity F1 Score: {comprehensive_metrics['entity_f1']:.3f}&quot;)
+print(f&quot;Role Classification Accuracy: {comprehensive_metrics['rca']:.3f}&quot;)
+print(f&quot;Condition Extraction F1: {comprehensive_metrics['condition_f1']:.3f}&quot;)
+
+# Performance by reaction complexity
+complexity_labels = assign_complexity_labels(ground_truth)  # Your complexity assignment logic
+complexity_metrics = metrics_calc.analyze_performance_by_complexity(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    complexity_labels=complexity_labels
+)
+
+# Error reduction analysis
+baseline_metrics = calculate_baseline_metrics(baseline_predictions, ground_truth)
+error_reduction = metrics_calc.calculate_error_reduction(
+    baseline_metrics=baseline_metrics,
+    improved_metrics=comprehensive_metrics
+)
+
+print(f&quot;Error Reduction:&quot;)
+print(f&quot;Entity Recognition: {error_reduction['entity_recognition']:.1f}%&quot;)
+print(f&quot;Role Classification: {error_reduction['role_classification']:.1f}%&quot;)
+print(f&quot;Condition Extraction: {error_reduction['condition_extraction']:.1f}%&quot;)
+
+# Export metrics summary
+metrics_calc.export_metrics_summary(
+    comprehensive_metrics, 
+    &quot;comprehensive_metrics_summary.json&quot;
+)
+</code></pre>
+<h2 id="utility-functions-and-helpers">🔧 Utility Functions and Helpers</h2>
+<h3 id="xml-parsing-and-validation">XML Parsing and Validation</h3>
+<pre><code class="language-python">from chemistry_llm.utils.xml_parser import parse_reaction_xml, validate_xml_structure
+
+# Parse extracted XML to structured data
+xml_output = &quot;&quot;&quot;
+&lt;reaction&gt;
+    &lt;reactants&gt;
+        &lt;reactant name=&quot;benzoic acid&quot; amount=&quot;2.5 g&quot;/&gt;
+    &lt;/reactants&gt;
+    &lt;products&gt;
+        &lt;product name=&quot;product&quot; yield=&quot;84%&quot;/&gt;
+    &lt;/products&gt;
+    &lt;conditions&gt;
+        &lt;temperature&gt;reflux&lt;/temperature&gt;
+        &lt;time&gt;4 hours&lt;/time&gt;
+    &lt;/conditions&gt;
+&lt;/reaction&gt;
+&quot;&quot;&quot;
+
+# Parse XML
+structured_data = parse_reaction_xml(xml_output)
+
+# Validate XML structure
+is_valid, errors = validate_xml_structure(xml_output)
+if not is_valid:
+    print(&quot;XML validation errors:&quot;, errors)
+</code></pre>
+<h3 id="device-and-memory-management">Device and Memory Management</h3>
+<pre><code class="language-python">from chemistry_llm.utils.device_utils import get_optimal_device, get_memory_info
+
+# Automatic device selection
+device = get_optimal_device()
+print(f&quot;Selected device: {device}&quot;)
+
+# Memory information
+memory_info = get_memory_info()
+print(f&quot;Available GPU memory: {memory_info['gpu_memory_available']:.1f} GB&quot;)
+print(f&quot;Available system RAM: {memory_info['system_memory_available']:.1f} GB&quot;)
+
+# Optimize model loading based on available memory
+if memory_info['gpu_memory_available'] &gt; 12:
+    load_in_4bit = False
+    torch_dtype = &quot;float16&quot;
+elif memory_info['gpu_memory_available'] &gt; 6:
+    load_in_4bit = True
+    torch_dtype = &quot;float16&quot;
+else:
+    # Use CPU
+    device = &quot;cpu&quot;
+    torch_dtype = &quot;float32&quot;
+</code></pre>
+<h3 id="custom-prompt-engineering">Custom Prompt Engineering</h3>
+<pre><code class="language-python">from chemistry_llm.core.prompt_builder import PromptBuilder
+
+# Create custom prompt builder
+prompt_builder = PromptBuilder(
+    use_cot=True,
+    cot_steps=[
+        &quot;Identify all chemical compounds mentioned&quot;,
+        &quot;Determine the role of each compound&quot;,
+        &quot;Extract reaction conditions&quot;,
+        &quot;Identify products and yields&quot;,
+        &quot;Structure the output in XML format&quot;
+    ]
+)
+
+# Build custom prompt
+custom_prompt = prompt_builder.build_extraction_prompt(
+    procedure_text=&quot;Your procedure here&quot;,
+    include_examples=True,
+    format_type=&quot;xml&quot;
+)
+
+# Use with extractor
+result = extractor.extract_reaction(
+    procedure_text,
+    custom_prompt=custom_prompt
+)
+</code></pre>
+<h2 id="output-formats-and-post-processing">📊 Output Formats and Post-Processing</h2>
+<h3 id="structured-output-formats">Structured Output Formats</h3>
+<pre><code class="language-python"># JSON output (default)
+results = extractor.analyze_procedure(procedure, output_format=&quot;json&quot;)
+
+# XML output
+results = extractor.analyze_procedure(procedure, output_format=&quot;xml&quot;)
+
+# YAML output
+results = extractor.analyze_procedure(procedure, output_format=&quot;yaml&quot;)
+
+# Custom structured output
+results = extractor.analyze_procedure(
+    procedure,
+    output_format=&quot;structured&quot;,
+    include_confidence=True,
+    include_reasoning=True
+)
+</code></pre>
+<h3 id="post-processing-and-validation">Post-Processing and Validation</h3>
+<pre><code class="language-python">from chemistry_llm.utils.post_processing import validate_extraction, normalize_entities
+
+def post_process_results(results):
+    &quot;&quot;&quot;Post-process extraction results for quality assurance&quot;&quot;&quot;
+
+    # Validate extraction completeness
+    validation_results = validate_extraction(results['extracted_data'])
+
+    # Normalize chemical entities
+    normalized_data = normalize_entities(results['extracted_data'])
+
+    # Check for common extraction errors
+    if validation_results['missing_reactants']:
+        print(&quot;Warning: No reactants found&quot;)
+
+    if validation_results['missing_products']:
+        print(&quot;Warning: No products found&quot;)
+
+    if results['confidence'] &lt; 0.7:
+        print(f&quot;Warning: Low confidence score ({results['confidence']:.2f})&quot;)
+
+    return {
+        **results,
+        'extracted_data': normalized_data,
+        'validation': validation_results
+    }
+
+# Apply post-processing
+processed_results = post_process_results(raw_results)
+</code></pre>
+<h2 id="integration-examples">🔗 Integration Examples</h2>
+<h3 id="jupyter-notebook-integration">Jupyter Notebook Integration</h3>
+<pre><code class="language-python"># Display results with rich formatting in Jupyter
+from IPython.display import display, HTML, JSON
+import pandas as pd
+
+def display_extraction_results(results):
+    &quot;&quot;&quot;Display extraction results in Jupyter with rich formatting&quot;&quot;&quot;
+
+    # Display confidence and timing
+    print(f&quot;Confidence: {results['confidence']:.2f}&quot;)
+    print(f&quot;Processing time: {results['processing_time']:.1f}s&quot;)
+
+    # Display extracted entities as DataFrame
+    entities_data = []
+    for reactant in results['extracted_data']['reactants']:
+        entities_data.append({
+            'Type': 'Reactant',
+            'Name': reactant['name'],
+            'Amount': reactant.get('amount', 'N/A'),
+            'Role': 'Reactant'
+        })
+
+    for product in results['extracted_data']['products']:
+        entities_data.append({
+            'Type': 'Product',
+            'Name': product['name'],
+            'Amount': product.get('yield', 'N/A'),
+            'Role': 'Product'
+        })
+
+    df = pd.DataFrame(entities_data)
+    display(df)
+
+    # Display conditions
+    if results['extracted_data']['conditions']:
+        print(&quot;\nReaction Conditions:&quot;)
+        display(JSON(results['extracted_data']['conditions']))
+
+# Use in Jupyter
+results = extractor.analyze_procedure(procedure)
+display_extraction_results(results)
+</code></pre>
+<h3 id="web-api-integration">Web API Integration</h3>
+<pre><code class="language-python">from flask import Flask, request, jsonify
+from chemistry_llm import ChemistryReactionExtractor
+
+app = Flask(__name__)
+extractor = ChemistryReactionExtractor.from_pretrained(&quot;chemplusx/rxnextract-complete&quot;)
+
+@app.route('/extract', methods=['POST'])
+def extract_reaction():
+    &quot;&quot;&quot;Web API endpoint for reaction extraction&quot;&quot;&quot;
+    try:
+        data = request.get_json()
+        procedure = data.get('procedure', '')
+
+        if not procedure:
+            return jsonify({'error': 'No procedure provided'}), 400
+
+        # Extract reaction information
+        results = extractor.analyze_procedure(procedure)
+
+        return jsonify({
+            'success': True,
+            'results': results
+        })
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/batch_extract', methods=['POST'])
+def batch_extract():
+    &quot;&quot;&quot;Batch extraction endpoint&quot;&quot;&quot;
+    try:
+        data = request.get_json()
+        procedures = data.get('procedures', [])
+
+        if not procedures:
+            return jsonify({'error': 'No procedures provided'}), 400
+
+        # Batch processing
+        results = extractor.batch_analyze(procedures)
+
+        return jsonify({
+            'success': True,
+            'count': len(results),
+            'results': results
+        })
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
+</code></pre>
+<h2 id="performance-optimization">🚀 Performance Optimization</h2>
+<h3 id="memory-optimization">Memory Optimization</h3>
+<pre><code class="language-python"># Optimize for low-memory environments
+extractor = ChemistryReactionExtractor.from_pretrained(
+    &quot;chemplusx/rxnextract-complete&quot;,
+    load_in_4bit=True,
+    device=&quot;cuda&quot;,
+    max_memory={0: &quot;6GB&quot;},  # Limit GPU 0 to 6GB
+    offload_folder=&quot;./offload&quot;
+)
+
+# Clear cache periodically
+import torch
+torch.cuda.empty_cache()
+</code></pre>
+<h3 id="batch-processing-optimization">Batch Processing Optimization</h3>
+<pre><code class="language-python">def optimized_batch_processing(procedures, batch_size=8):
+    &quot;&quot;&quot;Optimized batch processing with memory management&quot;&quot;&quot;
+
+    extractor = ChemistryReactionExtractor.from_pretrained(
+        &quot;chemplusx/rxnextract-complete&quot;,
+        load_in_4bit=True
+    )
+
+    results = []
+    for i in range(0, len(procedures), batch_size):
+        batch = procedures[i:i+batch_size]
+
+        # Process batch
+        batch_results = extractor.batch_analyze(batch)
+        results.extend(batch_results)
+
+        # Clear memory
+        torch.cuda.empty_cache()
+
+        # Progress update
+        print(f&quot;Processed {min(i+batch_size, len(procedures))}/{len(procedures)} procedures&quot;)
+
+    return results
+</code></pre>
+<hr />
+<p><strong>Next Steps</strong>: 
+- For comprehensive analysis capabilities, see <a href="../ANALYSIS/">Analysis &amp; Evaluation Guide</a>
+- For version history and updates, see <a href="../CHANGELOG/">Changelog</a>
+- For contributing to the project, see <a href="../CONTRIBUTING/">Contributing Guidelines</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

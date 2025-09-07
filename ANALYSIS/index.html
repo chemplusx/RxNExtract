@@ -1,0 +1,3160 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://chemplusx.github.io/RxNExtract/ANALYSIS/">
+      
+      
+        <link rel="prev" href="../USAGE/">
+      
+      
+        <link rel="next" href="../CHANGELOG/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Analysis - RxNExtract Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analysis-evaluation-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RxNExtract Documentation" class="md-header__button md-logo" aria-label="RxNExtract Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RxNExtract Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/chemplusx/RxNExtract" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RxNExtract Documentation" class="md-nav__button md-logo" aria-label="RxNExtract Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RxNExtract Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chemplusx/RxNExtract" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../INSTALLATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USAGE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Analysis
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analysis
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-analysis-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Error Analysis Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Error Analysis Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-error-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Error Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qualitative-analysis-of-reaction-type-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qualitative Analysis of Reaction Type Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Categories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-entity-recognition-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Entity Recognition Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-role-classification-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Role Classification Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-condition-extraction-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Condition Extraction Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-chain-of-thought-cot-reasoning-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Chain-of-Thought (CoT) Reasoning Failures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ablation-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Ablation Studies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 Ablation Studies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-ablation-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Ablation Study
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ablation-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablation Configurations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ablation Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-direct-extraction-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Direct Extraction (Baseline)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-structured-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Structured Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-meta-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Meta Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-chain-of-thought-cot" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Chain-of-Thought (CoT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cot-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. CoT + Reflection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-self-grounding" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Self-Grounding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-complete-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Complete Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-iterative-refinement" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Iterative Refinement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-prompt-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Prompt Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexity-stratified-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity-Stratified Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Statistical Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Statistical Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pairwise-method-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pairwise Method Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcnemars-test-for-classification-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      McNemar's Test for Classification Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anova-for-multiple-method-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      ANOVA for Multiple Method Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap-confidence-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootstrap Confidence Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseline-reproducibility-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baseline Reproducibility Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-statistical-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Statistical Report
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uncertainty-quantification" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Uncertainty Quantification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Uncertainty Quantification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calibration-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calibration Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperature-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temperature Scaling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-calibration-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Calibration Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confidence-stratified-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confidence-Stratified Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reliability-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reliability Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-uncertainty-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Uncertainty Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      📏 Comprehensive Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📏 Comprehensive Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-by-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance by Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-reduction-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Reduction Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-and-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export and Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-reproducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔬 Research Reproducibility
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 Research Reproducibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-analysis-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Analysis Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-analysis-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Command Line Analysis Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Command Line Analysis Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-analysis-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Analysis Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ablation-study-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablation Study Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-analysis-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical Analysis Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncertainty-analysis-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uncertainty Analysis Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-analysis-pipeline-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Analysis Pipeline Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-output-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Analysis Output Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-analysis-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Custom Analysis Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Custom Analysis Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration File Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-metrics-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Metrics Implementation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Research Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Research Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literature-survey-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Literature Survey Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-adaptation-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain Adaptation Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-analysis-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Error Analysis Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Error Analysis Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-error-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Error Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qualitative-analysis-of-reaction-type-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qualitative Analysis of Reaction Type Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Categories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-entity-recognition-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Entity Recognition Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-role-classification-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Role Classification Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-condition-extraction-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Condition Extraction Errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-chain-of-thought-cot-reasoning-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Chain-of-Thought (CoT) Reasoning Failures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ablation-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Ablation Studies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 Ablation Studies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-ablation-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Ablation Study
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ablation-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablation Configurations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ablation Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-direct-extraction-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Direct Extraction (Baseline)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-structured-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Structured Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-meta-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Meta Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-chain-of-thought-cot" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Chain-of-Thought (CoT)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cot-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. CoT + Reflection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-self-grounding" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Self-Grounding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-complete-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Complete Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-iterative-refinement" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Iterative Refinement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-prompt-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Prompt Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexity-stratified-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity-Stratified Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Statistical Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Statistical Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pairwise-method-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pairwise Method Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcnemars-test-for-classification-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      McNemar's Test for Classification Performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anova-for-multiple-method-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      ANOVA for Multiple Method Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bootstrap-confidence-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootstrap Confidence Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseline-reproducibility-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baseline Reproducibility Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-statistical-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Statistical Report
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uncertainty-quantification" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Uncertainty Quantification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Uncertainty Quantification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calibration-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calibration Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperature-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temperature Scaling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-calibration-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Calibration Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confidence-stratified-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confidence-Stratified Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reliability-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reliability Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprehensive-uncertainty-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Uncertainty Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      📏 Comprehensive Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📏 Comprehensive Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-by-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance by Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-reduction-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Reduction Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-and-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export and Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-reproducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔬 Research Reproducibility
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 Research Reproducibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-analysis-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Analysis Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-analysis-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Command Line Analysis Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Command Line Analysis Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-analysis-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Analysis Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ablation-study-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablation Study Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-analysis-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical Analysis Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncertainty-analysis-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uncertainty Analysis Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-analysis-pipeline-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Analysis Pipeline Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-output-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Analysis Output Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-analysis-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Custom Analysis Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Custom Analysis Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration File Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-metrics-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Metrics Implementation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Research Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Research Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literature-survey-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Literature Survey Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-adaptation-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain Adaptation Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="analysis-evaluation-guide">Analysis &amp; Evaluation Guide</h1>
+<p>Comprehensive guide to RxNExtract's analysis and evaluation framework for research-grade assessment and reproducibility.</p>
+<h2 id="overview">🔍 Overview</h2>
+<p>RxNExtract includes a comprehensive analysis suite designed for systematic evaluation of chemical reaction extraction performance. This framework enables researchers to:</p>
+<ul>
+<li><strong>Analyze extraction errors</strong> across different categories and complexity levels</li>
+<li><strong>Conduct ablation studies</strong> to understand component contributions</li>
+<li><strong>Perform statistical analysis</strong> with significance testing</li>
+<li><strong>Quantify uncertainty</strong> and calibrate confidence scores</li>
+<li><strong>Calculate comprehensive metrics</strong> for research reproducibility</li>
+</ul>
+<h2 id="error-analysis-framework">📊 Error Analysis Framework</h2>
+<h3 id="basic-error-analysis">Basic Error Analysis</h3>
+<pre><code class="language-python">from chemistry_llm.analysis import ErrorAnalyzer
+
+# Initialize error analyzer
+error_analyzer = ErrorAnalyzer()
+
+# Load your predictions and ground truth
+predictions = load_predictions(&quot;model_predictions.json&quot;)
+ground_truth = load_ground_truth(&quot;ground_truth.json&quot;)
+
+# Comprehensive error analysis
+error_results = error_analyzer.analyze_prediction_errors(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    method_name=&quot;RxNExtract-Complete&quot;
+)
+
+# Generate detailed error report
+report = error_analyzer.generate_error_report(
+    error_results, 
+    output_file=&quot;error_analysis_report.txt&quot;
+)
+
+print(f&quot;Total errors analyzed: {error_results.total_errors}&quot;)
+print(f&quot;Entity recognition errors: {error_results.entity_errors}&quot;)
+print(f&quot;Role classification errors: {error_results.role_errors}&quot;)
+print(f&quot;Condition extraction errors: {error_results.condition_errors}&quot;)
+</code></pre>
+<h3 id="qualitative-analysis-of-reaction-type-extraction">Qualitative Analysis of Reaction Type Extraction</h3>
+<p><img alt="Extraction Examples" src="../extraction_examples.png" /></p>
+<h3 id="error-categories">Error Categories</h3>
+<h4 id="1-entity-recognition-errors">1. Entity Recognition Errors</h4>
+<ul>
+<li><strong>Missing Entities</strong>: Compounds mentioned in text but not extracted</li>
+<li><strong>False Positives</strong>: Non-chemical entities incorrectly identified as compounds</li>
+<li><strong>Incorrect Entity Types</strong>: Chemical compounds misclassified (e.g., salt as organic compound)</li>
+</ul>
+<pre><code class="language-python"># Analyze entity recognition errors specifically
+entity_analysis = error_analyzer.analyze_entity_errors(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    include_details=True
+)
+
+print(&quot;Entity Recognition Error Breakdown:&quot;)
+print(f&quot;Missing entities: {entity_analysis.missing_entities_rate:.1f}%&quot;)
+print(f&quot;False positives: {entity_analysis.false_positive_rate:.1f}%&quot;)
+print(f&quot;Type misclassification: {entity_analysis.type_error_rate:.1f}%&quot;)
+</code></pre>
+<h4 id="2-role-classification-errors">2. Role Classification Errors</h4>
+<ul>
+<li><strong>Reactant/Product Confusion</strong>: Misassigning chemical roles</li>
+<li><strong>Catalyst Misidentification</strong>: Catalysts incorrectly classified as reactants</li>
+<li><strong>Solvent Misclassification</strong>: Solvents confused with reactants or reagents</li>
+</ul>
+<pre><code class="language-python"># Role classification error analysis
+role_analysis = error_analyzer.analyze_role_classification_errors(
+    predictions=predictions,
+    ground_truth=ground_truth
+)
+
+print(&quot;Role Classification Errors:&quot;)
+print(f&quot;Reactant/product confusion: {role_analysis.reactant_product_confusion:.1f}%&quot;)
+print(f&quot;Catalyst misidentification: {role_analysis.catalyst_errors:.1f}%&quot;)
+print(f&quot;Solvent misclassification: {role_analysis.solvent_errors:.1f}%&quot;)
+</code></pre>
+<h4 id="3-condition-extraction-errors">3. Condition Extraction Errors</h4>
+<ul>
+<li><strong>Missing Temperature/Time</strong>: Reaction conditions not extracted</li>
+<li><strong>Incomplete Procedures</strong>: Partial extraction of multi-step processes</li>
+<li><strong>Unit Conversion Errors</strong>: Incorrect handling of measurement units</li>
+<li><strong>Implicit Condition Interpretation</strong>: Failure to infer standard conditions</li>
+</ul>
+<pre><code class="language-python"># Condition extraction error analysis
+condition_analysis = error_analyzer.analyze_condition_extraction_errors(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    include_implicit=True
+)
+
+print(&quot;Condition Extraction Errors:&quot;)
+print(f&quot;Missing temperature: {condition_analysis.missing_temperature:.1f}%&quot;)
+print(f&quot;Missing time: {condition_analysis.missing_time:.1f}%&quot;)
+print(f&quot;Incomplete procedures: {condition_analysis.incomplete_procedures:.1f}%&quot;)
+print(f&quot;Unit errors: {condition_analysis.unit_errors:.1f}%&quot;)
+</code></pre>
+<h4 id="4-chain-of-thought-cot-reasoning-failures">4. Chain-of-Thought (CoT) Reasoning Failures</h4>
+<ul>
+<li><strong>Implicit Condition Interpretation</strong>: Failure to reason about unstated conditions</li>
+<li><strong>Generic Entity Handling</strong>: Inability to resolve generic terms like "the compound"</li>
+<li><strong>Multi-step Confusion</strong>: Errors in tracking entities across procedure steps</li>
+</ul>
+<pre><code class="language-python"># CoT failure analysis (requires raw model outputs)
+cot_failures = error_analyzer.analyze_cot_failures(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    raw_outputs=raw_model_outputs,
+    reasoning_steps=True
+)
+
+print(&quot;Chain-of-Thought Failure Analysis:&quot;)
+print(f&quot;Implicit reasoning failures: {cot_failures.implicit_failures:.1f}%&quot;)
+print(f&quot;Generic entity failures: {cot_failures.generic_entity_failures:.1f}%&quot;)
+print(f&quot;Multi-step tracking errors: {cot_failures.multistep_errors:.1f}%&quot;)
+</code></pre>
+<h3 id="method-comparison">Method Comparison</h3>
+<pre><code class="language-python"># Compare multiple methods
+method_results = {
+    'baseline': baseline_error_results,
+    'cot_only': cot_error_results,
+    'complete_framework': complete_error_results
+}
+
+# Perform comparative error analysis
+error_comparisons = error_analyzer.compare_methods(method_results)
+
+# Generate comparison report
+comparison_report = error_analyzer.generate_comparison_report(
+    error_comparisons,
+    output_file=&quot;method_comparison_report.txt&quot;
+)
+
+print(&quot;Error Reduction Summary:&quot;)
+for comparison in error_comparisons:
+    print(f&quot;{comparison.error_type}: {comparison.error_reduction:.1f}% reduction&quot;)
+</code></pre>
+<h2 id="ablation-studies">🧪 Ablation Studies</h2>
+<p>Systematic component-level performance analysis to understand the contribution of different framework components.</p>
+<h3 id="complete-ablation-study">Complete Ablation Study</h3>
+<pre><code class="language-python">from chemistry_llm.analysis import AblationStudy
+
+# Initialize ablation study
+ablation = AblationStudy(
+    model_path=&quot;./model&quot;,
+    config_path=&quot;./config/ablation_config.yaml&quot;
+)
+
+# Run complete ablation study
+study_results = ablation.run_complete_study(
+    test_data=test_procedures,
+    ground_truth=ground_truth,
+    sample_size=1000,
+    stratified=True,  # Stratify by reaction complexity
+    complexity_levels=['simple', 'moderate', 'complex'],
+    random_state=42
+)
+
+# Generate comprehensive ablation report
+report = ablation.generate_ablation_report(
+    study_results, 
+    output_file=&quot;ablation_study_report.txt&quot;
+)
+
+print(&quot;Ablation Study Results:&quot;)
+for config_name, metrics in study_results.items():
+    print(f&quot;{config_name:20}: CRA = {metrics.cra:.3f}, F1 = {metrics.entity_f1:.3f}&quot;)
+</code></pre>
+<h3 id="ablation-configurations">Ablation Configurations</h3>
+<h4 id="1-direct-extraction-baseline">1. Direct Extraction (Baseline)</h4>
+<p>Basic extraction without any enhancements.</p>
+<h4 id="2-structured-output">2. Structured Output</h4>
+<p>XML-formatted output for better parsing.</p>
+<h4 id="3-meta-prompt">3. Meta Prompt</h4>
+<p>Enhanced prompt engineering with task-specific instructions.</p>
+<h4 id="4-chain-of-thought-cot">4. Chain-of-Thought (CoT)</h4>
+<p>Step-by-step reasoning approach.</p>
+<h4 id="5-cot-reflection">5. CoT + Reflection</h4>
+<p>Chain-of-thought with self-reflection and correction.</p>
+<h4 id="6-self-grounding">6. Self-Grounding</h4>
+<p>Entity validation and consistency checking.</p>
+<h4 id="7-complete-framework">7. Complete Framework</h4>
+<p>All components combined (recommended configuration).</p>
+<h4 id="8-iterative-refinement">8. Iterative Refinement</h4>
+<p>Multi-pass extraction with refinement.</p>
+<h3 id="dynamic-prompt-analysis">Dynamic Prompt Analysis</h3>
+<pre><code class="language-python"># Analyze dynamic prompt component contributions
+dynamic_analysis = ablation.analyze_dynamic_prompt_components(
+    test_sample=test_procedures[:100],
+    truth_sample=ground_truth[:100],
+    prompt_variants=[
+        'basic_prompt',
+        'cot_prompt', 
+        'reflective_prompt',
+        'self_grounding_prompt'
+    ]
+)
+
+# Component contribution analysis
+contributions = ablation.analyze_component_contributions(study_results)
+
+print(&quot;Component Contributions:&quot;)
+for component, contribution in contributions.items():
+    print(f&quot;{component}: +{contribution:.1f}% CRA improvement&quot;)
+
+# Interaction effects analysis
+interactions = ablation.analyze_interaction_effects(
+    study_results,
+    components=['cot', 'reflection', 'self_grounding']
+)
+</code></pre>
+<h3 id="complexity-stratified-analysis">Complexity-Stratified Analysis</h3>
+<pre><code class="language-python"># Analyze performance by reaction complexity
+complexity_results = ablation.analyze_by_complexity(
+    study_results,
+    complexity_labels=complexity_labels,
+    stratification_method='balanced'  # 'balanced', 'natural', 'quantile'
+)
+
+print(&quot;Performance by Complexity:&quot;)
+for complexity in ['simple', 'moderate', 'complex']:
+    results = complexity_results[complexity]
+    print(f&quot;{complexity:10}: CRA = {results['cra']:.3f}, &quot;
+          f&quot;Entity F1 = {results['entity_f1']:.3f}&quot;)
+
+# Export detailed results
+ablation.export_results_to_csv(study_results, &quot;ablation_detailed_results.csv&quot;)
+ablation.export_complexity_analysis(complexity_results, &quot;complexity_analysis.csv&quot;)
+</code></pre>
+<h2 id="statistical-analysis">📈 Statistical Analysis</h2>
+<p>Comprehensive statistical testing for research reproducibility and significance assessment.</p>
+<h3 id="pairwise-method-comparison">Pairwise Method Comparison</h3>
+<pre><code class="language-python">from chemistry_llm.analysis import StatisticalAnalyzer
+
+# Initialize statistical analyzer
+stats_analyzer = StatisticalAnalyzer(
+    significance_level=0.05,
+    confidence_level=0.95
+)
+
+# Load results from different methods
+baseline_cra_scores = [r['cra'] for r in baseline_results]
+complete_cra_scores = [r['cra'] for r in complete_framework_results]
+
+# Perform pairwise statistical comparison
+comparison = stats_analyzer.perform_pairwise_comparison(
+    method1_results=baseline_cra_scores,
+    method2_results=complete_cra_scores,
+    method1_name=&quot;Baseline&quot;,
+    method2_name=&quot;Complete Framework&quot;,
+    test_type=&quot;paired_t&quot;,  # 'paired_t', 'wilcoxon', 'mann_whitney'
+    effect_size=True
+)
+
+print(&quot;Statistical Comparison Results:&quot;)
+print(f&quot;Test statistic: {comparison['statistic']:.4f}&quot;)
+print(f&quot;p-value: {comparison['p_value']:.6f}&quot;)
+print(f&quot;Effect size (Cohen's d): {comparison['effect_size']:.3f}&quot;)
+print(f&quot;95% Confidence Interval: [{comparison['ci_lower']:.3f}, {comparison['ci_upper']:.3f}]&quot;)
+print(f&quot;Statistically significant: {comparison['significant']}&quot;)
+</code></pre>
+<h3 id="mcnemars-test-for-classification-performance">McNemar's Test for Classification Performance</h3>
+<pre><code class="language-python"># McNemar's test for paired classification results
+baseline_correct = [is_completely_correct(pred, truth) 
+                   for pred, truth in zip(baseline_results, ground_truth)]
+complete_correct = [is_completely_correct(pred, truth) 
+                   for pred, truth in zip(complete_results, ground_truth)]
+
+mcnemar_result = stats_analyzer.perform_mcnemar_test(
+    method1_correct=baseline_correct,
+    method2_correct=complete_correct,
+    method1_name=&quot;Baseline&quot;,
+    method2_name=&quot;Complete Framework&quot;
+)
+
+print(&quot;McNemar's Test Results:&quot;)
+print(f&quot;McNemar's χ²: {mcnemar_result['statistic']:.2f}&quot;)
+print(f&quot;p-value: {mcnemar_result['p_value']:.6f}&quot;)
+print(f&quot;Significant improvement: {mcnemar_result['significant']}&quot;)
+
+# Contingency table analysis
+print(f&quot;Both correct: {mcnemar_result['both_correct']}&quot;)
+print(f&quot;Only method1 correct: {mcnemar_result['only_method1_correct']}&quot;)
+print(f&quot;Only method2 correct: {mcnemar_result['only_method2_correct']}&quot;)
+print(f&quot;Both incorrect: {mcnemar_result['both_incorrect']}&quot;)
+</code></pre>
+<h3 id="anova-for-multiple-method-comparison">ANOVA for Multiple Method Comparison</h3>
+<pre><code class="language-python"># ANOVA for comparing multiple methods
+methods_data = {
+    'Baseline': [r['cra'] for r in baseline_results],
+    'CoT-Only': [r['cra'] for r in cot_results],
+    'Self-Grounding': [r['cra'] for r in grounding_results],
+    'Complete Framework': [r['cra'] for r in complete_results]
+}
+
+anova_results = stats_analyzer.perform_anova(
+    groups=methods_data,
+    post_hoc=True,  # Include Tukey's HSD post-hoc tests
+    effect_size=True
+)
+
+print(&quot;ANOVA Results:&quot;)
+print(f&quot;F-statistic: {anova_results['f_statistic']:.4f}&quot;)
+print(f&quot;p-value: {anova_results['p_value']:.6f}&quot;)
+print(f&quot;Effect size (η²): {anova_results['eta_squared']:.3f}&quot;)
+
+# Post-hoc pairwise comparisons
+if anova_results['significant']:
+    print(&quot;\nPost-hoc Pairwise Comparisons:&quot;)
+    for comparison in anova_results['post_hoc']:
+        print(f&quot;{comparison['group1']} vs {comparison['group2']}: &quot;
+              f&quot;p = {comparison['p_value']:.4f}&quot;)
+</code></pre>
+<h3 id="bootstrap-confidence-intervals">Bootstrap Confidence Intervals</h3>
+<pre><code class="language-python"># Bootstrap confidence intervals for robust estimation
+bootstrap_results = stats_analyzer.calculate_bootstrap_confidence_intervals(
+    data=complete_cra_scores,
+    statistic='mean',  # 'mean', 'median', 'std'
+    n_bootstrap=1000,
+    confidence_level=0.95
+)
+
+print(&quot;Bootstrap Confidence Intervals:&quot;)
+print(f&quot;Mean: {bootstrap_results['mean']:.3f}&quot;)
+print(f&quot;95% CI: [{bootstrap_results['ci_lower']:.3f}, {bootstrap_results['ci_upper']:.3f}]&quot;)
+print(f&quot;Bootstrap SE: {bootstrap_results['bootstrap_se']:.4f}&quot;)
+</code></pre>
+<h3 id="baseline-reproducibility-analysis">Baseline Reproducibility Analysis</h3>
+<pre><code class="language-python"># Analyze reproducibility of literature baselines
+literature_results = {
+    'ChemRxnBERT': 0.789,
+    'GPT-3.5': 0.641,
+    'RxnScribe': 0.701
+}
+
+reproduced_results = {
+    'ChemRxnBERT': [0.782, 0.785, 0.779, 0.791, 0.788],
+    'GPT-3.5': [0.634, 0.637, 0.631, 0.645, 0.629],
+    'RxnScribe': [0.695, 0.708, 0.697, 0.705, 0.699]
+}
+
+reproducibility = stats_analyzer.calculate_baseline_reproducibility(
+    literature_results=literature_results,
+    reproduced_results=reproduced_results
+)
+
+print(&quot;Baseline Reproducibility Analysis:&quot;)
+for method, repro_stats in reproducibility.items():
+    print(f&quot;{method}:&quot;)
+    print(f&quot;  Literature result: {literature_results[method]:.3f}&quot;)
+    print(f&quot;  Reproduced mean: {repro_stats['mean']:.3f} ± {repro_stats['std']:.3f}&quot;)
+    print(f&quot;  Reproducible: {repro_stats['is_reproducible']}&quot;)
+    print(f&quot;  95% CI contains literature: {repro_stats['ci_contains_literature']}&quot;)
+</code></pre>
+<h3 id="comprehensive-statistical-report">Comprehensive Statistical Report</h3>
+<pre><code class="language-python"># Generate comprehensive statistical report
+statistical_data = {
+    'pairwise_comparisons': {
+        'baseline_vs_complete': comparison,
+        'cot_vs_complete': cot_comparison
+    },
+    'mcnemar_tests': {
+        'classification_performance': mcnemar_result
+    },
+    'anova_results': anova_results,
+    'bootstrap_intervals': bootstrap_results,
+    'reproducibility_analysis': reproducibility
+}
+
+stats_report = stats_analyzer.generate_statistical_report(
+    statistical_data,
+    output_file=&quot;comprehensive_statistical_analysis.txt&quot;
+)
+
+# Export statistical results to CSV for further analysis
+stats_analyzer.export_statistical_results(
+    statistical_data,
+    &quot;statistical_results.csv&quot;
+)
+</code></pre>
+<h2 id="uncertainty-quantification">🎯 Uncertainty Quantification</h2>
+<p>Confidence calibration and uncertainty analysis for robust performance assessment.</p>
+<h3 id="calibration-metrics">Calibration Metrics</h3>
+<pre><code class="language-python">from chemistry_llm.analysis import UncertaintyQuantifier
+
+# Initialize uncertainty quantifier
+uncertainty = UncertaintyQuantifier()
+
+# Extract confidence scores and binary accuracy
+confidences = [pred['confidence'] for pred in predictions]
+accuracies = [1.0 if is_completely_correct(pred, truth) else 0.0 
+              for pred, truth in zip(predictions, ground_truth)]
+
+# Calculate calibration metrics
+calibration_metrics = uncertainty.calculate_calibration_metrics(
+    confidences=confidences,
+    accuracies=accuracies,
+    n_bins=10
+)
+
+print(&quot;Calibration Analysis:&quot;)
+print(f&quot;Expected Calibration Error (ECE): {calibration_metrics.ece:.4f}&quot;)
+print(f&quot;Brier Score: {calibration_metrics.brier_score:.4f}&quot;)
+print(f&quot;Reliability: {calibration_metrics.reliability:.4f}&quot;)
+print(f&quot;Resolution: {calibration_metrics.resolution:.4f}&quot;)
+print(f&quot;Uncertainty: {calibration_metrics.uncertainty:.4f}&quot;)
+</code></pre>
+<h3 id="temperature-scaling">Temperature Scaling</h3>
+<pre><code class="language-python"># Perform temperature scaling for calibration improvement
+calibrated_probs, optimal_temperature = uncertainty.perform_temperature_scaling(
+    validation_logits=validation_logits,
+    validation_labels=validation_labels,
+    test_logits=test_logits
+)
+
+print(f&quot;Optimal temperature: {optimal_temperature:.3f}&quot;)
+
+# Calculate calibration metrics after temperature scaling
+calibrated_metrics = uncertainty.calculate_calibration_metrics(
+    confidences=calibrated_probs,
+    accuracies=accuracies
+)
+
+print(&quot;After Temperature Scaling:&quot;)
+print(f&quot;ECE improvement: {calibration_metrics.ece - calibrated_metrics.ece:.4f}&quot;)
+print(f&quot;Brier Score improvement: {calibration_metrics.brier_score - calibrated_metrics.brier_score:.4f}&quot;)
+</code></pre>
+<h3 id="alternative-calibration-methods">Alternative Calibration Methods</h3>
+<pre><code class="language-python"># Platt scaling
+platt_calibrated_probs = uncertainty.perform_platt_scaling(
+    validation_scores=validation_scores,
+    validation_labels=validation_labels,
+    test_scores=test_scores
+)
+
+# Isotonic regression
+isotonic_calibrated_probs = uncertainty.perform_isotonic_regression(
+    validation_scores=validation_scores,
+    validation_labels=validation_labels,
+    test_scores=test_scores
+)
+
+# Compare calibration methods
+calibration_comparison = uncertainty.compare_calibration_methods(
+    original_probs=confidences,
+    temperature_scaled=calibrated_probs,
+    platt_scaled=platt_calibrated_probs,
+    isotonic_calibrated=isotonic_calibrated_probs,
+    true_labels=accuracies
+)
+
+print(&quot;Calibration Method Comparison:&quot;)
+for method, metrics in calibration_comparison.items():
+    print(f&quot;{method}: ECE = {metrics['ece']:.4f}, Brier = {metrics['brier_score']:.4f}&quot;)
+</code></pre>
+<h3 id="confidence-stratified-analysis">Confidence-Stratified Analysis</h3>
+<pre><code class="language-python"># Analyze performance by confidence level
+confidence_analysis = uncertainty.analyze_confidence_stratified_performance(
+    confidences=confidences,
+    accuracies=accuracies,
+    n_strata=5  # Divide into 5 confidence bins
+)
+
+print(&quot;Performance by Confidence Level:&quot;)
+for stratum in confidence_analysis:
+    print(f&quot;Confidence [{stratum['range'][0]:.1f}, {stratum['range'][1]:.1f}]: &quot;
+          f&quot;Accuracy = {stratum['accuracy']:.3f}, &quot;
+          f&quot;Count = {stratum['count']}&quot;)
+
+# High-confidence performance analysis
+high_confidence_threshold = 0.8
+high_conf_predictions = [pred for pred in predictions if pred['confidence'] &gt;= high_confidence_threshold]
+high_conf_accuracy = calculate_accuracy(high_conf_predictions, corresponding_ground_truth)
+
+print(f&quot;High-confidence (≥{high_confidence_threshold}) performance:&quot;)
+print(f&quot;Coverage: {len(high_conf_predictions)/len(predictions):.1%}&quot;)
+print(f&quot;Accuracy: {high_conf_accuracy:.3f}&quot;)
+</code></pre>
+<h3 id="reliability-diagrams">Reliability Diagrams</h3>
+<pre><code class="language-python"># Generate reliability diagram
+reliability_fig = uncertainty.generate_reliability_diagram(
+    confidences=confidences,
+    accuracies=accuracies,
+    n_bins=10,
+    save_path=&quot;reliability_diagram.png&quot;,
+    title=&quot;Model Calibration - Reliability Diagram&quot;
+)
+
+# Generate calibration comparison plot
+comparison_fig = uncertainty.plot_calibration_comparison(
+    {
+        'Original': confidences,
+        'Temperature Scaled': calibrated_probs,
+        'Platt Scaling': platt_calibrated_probs
+    },
+    true_labels=accuracies,
+    save_path=&quot;calibration_comparison.png&quot;
+)
+</code></pre>
+<h3 id="comprehensive-uncertainty-analysis">Comprehensive Uncertainty Analysis</h3>
+<pre><code class="language-python"># Comprehensive uncertainty analysis
+uncertainty_results = uncertainty.analyze_prediction_uncertainty(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    confidence_threshold=0.8,
+    include_calibration=True,
+    include_stratification=True
+)
+
+# Generate uncertainty report
+uncertainty_report = uncertainty.generate_uncertainty_report(
+    uncertainty_results,
+    output_file=&quot;uncertainty_analysis_report.txt&quot;
+)
+
+print(&quot;Uncertainty Analysis Summary:&quot;)
+print(f&quot;Model calibration (ECE): {uncertainty_results['calibration_metrics']['ece']:.4f}&quot;)
+print(f&quot;High-confidence accuracy: {uncertainty_results['high_confidence_accuracy']:.3f}&quot;)
+print(f&quot;Uncertainty reduction potential: {uncertainty_results['calibration_improvement']:.1%}&quot;)
+</code></pre>
+<h2 id="comprehensive-metrics">📏 Comprehensive Metrics</h2>
+<p>Calculate all performance metrics used in the research paper.</p>
+<h3 id="core-metrics">Core Metrics</h3>
+<pre><code class="language-python">from chemistry_llm.analysis import MetricsCalculator
+
+# Initialize metrics calculator
+metrics_calc = MetricsCalculator()
+
+# Calculate comprehensive metrics
+comprehensive_metrics = metrics_calc.calculate_comprehensive_metrics(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    include_detailed_breakdown=True
+)
+
+print(&quot;Core Performance Metrics:&quot;)
+print(f&quot;Complete Reaction Accuracy (CRA): {comprehensive_metrics['cra']:.3f}&quot;)
+print(f&quot;Entity F1 Score: {comprehensive_metrics['entity_f1']:.3f}&quot;)
+print(f&quot;Role Classification Accuracy (RCA): {comprehensive_metrics['rca']:.3f}&quot;)
+print(f&quot;Condition Extraction F1: {comprehensive_metrics['condition_f1']:.3f}&quot;)
+
+# Detailed breakdown
+print(&quot;\nDetailed Metrics Breakdown:&quot;)
+print(f&quot;Reactant F1: {comprehensive_metrics['reactant_f1']:.3f}&quot;)
+print(f&quot;Product F1: {comprehensive_metrics['product_f1']:.3f}&quot;)
+print(f&quot;Reagent F1: {comprehensive_metrics['reagent_f1']:.3f}&quot;)
+print(f&quot;Solvent F1: {comprehensive_metrics['solvent_f1']:.3f}&quot;)
+print(f&quot;Temperature Extraction Accuracy: {comprehensive_metrics['temperature_accuracy']:.3f}&quot;)
+print(f&quot;Time Extraction Accuracy: {comprehensive_metrics['time_accuracy']:.3f}&quot;)
+</code></pre>
+<h3 id="performance-by-complexity">Performance by Complexity</h3>
+<pre><code class="language-python"># Assign complexity labels to reactions
+complexity_labels = assign_complexity_labels(ground_truth)  # Your implementation
+
+# Calculate performance by reaction complexity
+complexity_metrics = metrics_calc.analyze_performance_by_complexity(
+    predictions=predictions,
+    ground_truth=ground_truth,
+    complexity_labels=complexity_labels
+)
+
+print(&quot;Performance by Reaction Complexity:&quot;)
+for complexity, metrics in complexity_metrics.items():
+    print(f&quot;{complexity.capitalize()}:&quot;)
+    print(f&quot;  Count: {metrics['count']}&quot;)
+    print(f&quot;  CRA: {metrics['cra']:.3f}&quot;)
+    print(f&quot;  Entity F1: {metrics['entity_f1']:.3f}&quot;)
+    print(f&quot;  RCA: {metrics['rca']:.3f}&quot;)
+</code></pre>
+<h3 id="error-reduction-analysis">Error Reduction Analysis</h3>
+<pre><code class="language-python"># Calculate error reduction compared to baseline
+baseline_metrics = calculate_baseline_metrics(baseline_predictions, ground_truth)
+
+error_reduction = metrics_calc.calculate_error_reduction(
+    baseline_metrics=baseline_metrics,
+    improved_metrics=comprehensive_metrics,
+    detailed=True
+)
+
+print(&quot;Error Reduction Analysis:&quot;)
+print(f&quot;Overall Error Reduction: {error_reduction['overall']:.1f}%&quot;)
+print(f&quot;Entity Recognition: {error_reduction['entity_recognition']:.1f}%&quot;)
+print(f&quot;Role Classification: {error_reduction['role_classification']:.1f}%&quot;)
+print(f&quot;Condition Extraction: {error_reduction['condition_extraction']:.1f}%&quot;)
+
+# Statistical significance of error reduction
+error_significance = metrics_calc.test_error_reduction_significance(
+    baseline_results=baseline_predictions,
+    improved_results=predictions,
+    ground_truth=ground_truth,
+    test_type='mcnemar'
+)
+
+print(f&quot;Error reduction significance: p = {error_significance['p_value']:.6f}&quot;)
+</code></pre>
+<h3 id="custom-metrics">Custom Metrics</h3>
+<pre><code class="language-python"># Define custom evaluation metrics
+def calculate_yield_extraction_accuracy(predictions, ground_truth):
+    &quot;&quot;&quot;Custom metric for yield extraction accuracy&quot;&quot;&quot;
+    correct_yields = 0
+    total_yields = 0
+
+    for pred, truth in zip(predictions, ground_truth):
+        truth_yields = extract_yields_from_truth(truth)  # Your implementation
+        pred_yields = extract_yields_from_prediction(pred)  # Your implementation
+
+        total_yields += len(truth_yields)
+        correct_yields += count_correct_yields(pred_yields, truth_yields)  # Your implementation
+
+    return correct_yields / total_yields if total_yields &gt; 0 else 0.0
+
+# Calculate custom metrics
+yield_accuracy = calculate_yield_extraction_accuracy(predictions, ground_truth)
+stoichiometry_accuracy = calculate_stoichiometry_accuracy(predictions, ground_truth)
+
+print(&quot;Custom Metrics:&quot;)
+print(f&quot;Yield Extraction Accuracy: {yield_accuracy:.3f}&quot;)
+print(f&quot;Stoichiometry Accuracy: {stoichiometry_accuracy:.3f}&quot;)
+
+# Add to comprehensive metrics
+comprehensive_metrics.update({
+    'yield_accuracy': yield_accuracy,
+    'stoichiometry_accuracy': stoichiometry_accuracy
+})
+</code></pre>
+<h3 id="export-and-visualization">Export and Visualization</h3>
+<pre><code class="language-python"># Export comprehensive metrics
+metrics_calc.export_metrics_summary(
+    comprehensive_metrics, 
+    &quot;comprehensive_metrics_summary.json&quot;
+)
+
+# Export detailed breakdown
+metrics_calc.export_detailed_metrics(
+    comprehensive_metrics,
+    &quot;detailed_metrics_breakdown.csv&quot;
+)
+
+# Generate metrics visualization
+metrics_viz = metrics_calc.generate_metrics_visualization(
+    comprehensive_metrics,
+    save_path=&quot;metrics_visualization.png&quot;,
+    include_comparison=True
+)
+
+# Performance heatmap by complexity and metric
+heatmap_fig = metrics_calc.create_performance_heatmap(
+    complexity_metrics,
+    metrics=['cra', 'entity_f1', 'rca', 'condition_f1'],
+    save_path=&quot;performance_heatmap.png&quot;
+)
+</code></pre>
+<h2 id="research-reproducibility">🔬 Research Reproducibility</h2>
+<h3 id="complete-analysis-pipeline">Complete Analysis Pipeline</h3>
+<pre><code class="language-python">from chemistry_llm.analysis import (
+    ErrorAnalyzer, AblationStudy, UncertaintyQuantifier,
+    StatisticalAnalyzer, MetricsCalculator
+)
+
+def run_paper_reproduction_analysis(
+    model_path: str,
+    test_data: List[str],
+    ground_truth: List[dict],
+    output_dir: str = &quot;./analysis_results&quot;
+):
+    &quot;&quot;&quot;
+    Complete analysis pipeline for research paper reproduction
+
+    This function runs all analyses described in the RxNExtract paper:
+    1. Error analysis with categorization
+    2. Ablation study across all configurations
+    3. Statistical significance testing
+    4. Uncertainty quantification and calibration
+    5. Comprehensive metrics calculation
+    &quot;&quot;&quot;
+
+    import os
+    from pathlib import Path
+
+    # Create output directory
+    output_path = Path(output_dir)
+    output_path.mkdir(exist_ok=True, parents=True)
+
+    print(&quot;=&quot; * 80)
+    print(&quot;RXNEXTRACT COMPREHENSIVE ANALYSIS PIPELINE&quot;)
+    print(&quot;=&quot; * 80)
+
+    # 1. Generate predictions for all ablation configurations
+    print(&quot;\n1. RUNNING ABLATION STUDY...&quot;)
+    ablation = AblationStudy(model_path=model_path)
+
+    study_results = ablation.run_complete_study(
+        test_data=test_data,
+        ground_truth=ground_truth,
+        sample_size=len(test_data),
+        stratified=True,
+        save_predictions=True,
+        output_dir=str(output_path / &quot;ablation_predictions&quot;)
+    )
+
+    # Save ablation results
+    ablation.generate_ablation_report(
+        study_results, 
+        str(output_path / &quot;ablation_study_report.txt&quot;)
+    )
+    ablation.export_results_to_csv(
+        study_results, 
+        str(output_path / &quot;ablation_results.csv&quot;)
+    )
+
+    print(f&quot;Ablation study complete. Results saved to {output_path}&quot;)
+
+    # 2. Error analysis for each configuration
+    print(&quot;\n2. RUNNING ERROR ANALYSIS...&quot;)
+    error_analyzer = ErrorAnalyzer()
+
+    method_error_results = {}
+    for config_name, config_results in study_results.items():
+        predictions = config_results.predictions
+
+        error_results = error_analyzer.analyze_prediction_errors(
+            predictions=predictions,
+            ground_truth=ground_truth,
+            method_name=config_name
+        )
+        method_error_results[config_name] = error_results
+
+        # Generate individual error reports
+        error_analyzer.generate_error_report(
+            error_results,
+            str(output_path / f&quot;error_analysis_{config_name}.txt&quot;)
+        )
+
+    # Comparative error analysis
+    error_comparisons = error_analyzer.compare_methods(method_error_results)
+    error_analyzer.generate_comparison_report(
+        error_comparisons,
+        str(output_path / &quot;error_reduction_analysis.txt&quot;)
+    )
+
+    print(&quot;Error analysis complete.&quot;)
+
+    # 3. Statistical analysis
+    print(&quot;\n3. RUNNING STATISTICAL ANALYSIS...&quot;)
+    stats_analyzer = StatisticalAnalyzer()
+
+    # Extract CRA scores for statistical testing
+    baseline_cra = [r.cra for r in study_results['direct_extraction'].results]
+    complete_cra = [r.cra for r in study_results['complete_framework'].results]
+
+    # Pairwise comparison
+    statistical_comparison = stats_analyzer.perform_pairwise_comparison(
+        method1_results=baseline_cra,
+        method2_results=complete_cra,
+        method1_name=&quot;Baseline&quot;,
+        method2_name=&quot;Complete Framework&quot;,
+        test_type=&quot;paired_t&quot;
+    )
+
+    # McNemar's test
+    baseline_correct = [r.is_completely_correct for r in study_results['direct_extraction'].results]
+    complete_correct = [r.is_completely_correct for r in study_results['complete_framework'].results]
+
+    mcnemar_result = stats_analyzer.perform_mcnemar_test(
+        method1_correct=baseline_correct,
+        method2_correct=complete_correct,
+        method1_name=&quot;Baseline&quot;,
+        method2_name=&quot;Complete Framework&quot;
+    )
+
+    # ANOVA across all configurations
+    methods_cra_data = {
+        config: [r.cra for r in results.results]
+        for config, results in study_results.items()
+    }
+
+    anova_results = stats_analyzer.perform_anova(
+        groups=methods_cra_data,
+        post_hoc=True
+    )
+
+    # Generate statistical report
+    statistical_data = {
+        'pairwise_comparisons': {'baseline_vs_complete': statistical_comparison},
+        'mcnemar_tests': {'classification_performance': mcnemar_result},
+        'anova_results': anova_results
+    }
+
+    stats_analyzer.generate_statistical_report(
+        statistical_data,
+        str(output_path / &quot;statistical_analysis_report.txt&quot;)
+    )
+
+    print(&quot;Statistical analysis complete.&quot;)
+
+    # 4. Uncertainty quantification
+    print(&quot;\n4. RUNNING UNCERTAINTY QUANTIFICATION...&quot;)
+    uncertainty = UncertaintyQuantifier()
+
+    # Use complete framework predictions for uncertainty analysis
+    complete_predictions = study_results['complete_framework'].predictions
+
+    if hasattr(complete_predictions[0], 'confidence'):
+        confidences = [p.confidence for p in complete_predictions]
+        accuracies = [1.0 if p.is_completely_correct else 0.0 for p in complete_predictions]
+
+        # Calibration analysis
+        calibration_metrics = uncertainty.calculate_calibration_metrics(
+            confidences=confidences,
+            accuracies=accuracies
+        )
+
+        # Temperature scaling (requires validation data)
+        if hasattr(complete_predictions[0], 'logits'):
+            val_logits = [p.logits for p in complete_predictions[:200]]  # Use first 200 for validation
+            val_labels = accuracies[:200]
+            test_logits = [p.logits for p in complete_predictions[200:]]
+
+            calibrated_probs, optimal_temp = uncertainty.perform_temperature_scaling(
+                validation_logits=val_logits,
+                validation_labels=val_labels,
+                test_logits=test_logits
+            )
+
+            # Calibration improvement
+            calibrated_metrics = uncertainty.calculate_calibration_metrics(
+                confidences=calibrated_probs,
+                accuracies=accuracies[200:]
+            )
+
+        # Generate reliability diagram
+        uncertainty.generate_reliability_diagram(
+            confidences=confidences,
+            accuracies=accuracies,
+            save_path=str(output_path / &quot;reliability_diagram.png&quot;)
+        )
+
+        # Comprehensive uncertainty analysis
+        uncertainty_results = uncertainty.analyze_prediction_uncertainty(
+            predictions=complete_predictions,
+            ground_truth=ground_truth
+        )
+
+        uncertainty.generate_uncertainty_report(
+            uncertainty_results,
+            str(output_path / &quot;uncertainty_analysis_report.txt&quot;)
+        )
+
+        print(&quot;Uncertainty quantification complete.&quot;)
+
+    else:
+        print(&quot;Warning: Predictions do not contain confidence scores. Skipping uncertainty analysis.&quot;)
+
+    # 5. Comprehensive metrics calculation
+    print(&quot;\n5. CALCULATING COMPREHENSIVE METRICS...&quot;)
+    metrics_calc = MetricsCalculator()
+
+    # Calculate metrics for all configurations
+    all_metrics = {}
+    for config_name, config_results in study_results.items():
+        config_metrics = metrics_calc.calculate_comprehensive_metrics(
+            predictions=config_results.predictions,
+            ground_truth=ground_truth
+        )
+        all_metrics[config_name] = config_metrics
+
+    # Export comprehensive metrics
+    metrics_calc.export_all_metrics(
+        all_metrics,
+        str(output_path / &quot;comprehensive_metrics.json&quot;)
+    )
+
+    # Create metrics comparison table (Table 3 from paper)
+    metrics_comparison_df = metrics_calc.create_metrics_table(
+        all_metrics,
+        metrics=['cra', 'entity_f1', 'rca', 'condition_f1']
+    )
+    metrics_comparison_df.to_csv(str(output_path / &quot;metrics_comparison_table.csv&quot;))
+
+    print(&quot;Comprehensive metrics calculation complete.&quot;)
+
+    # 6. Generate paper figures and tables
+    print(&quot;\n6. GENERATING PAPER FIGURES...&quot;)
+
+    # Error reduction figure (Figure 4 from paper)
+    create_error_reduction_figure(
+        error_comparisons,
+        save_path=str(output_path / &quot;error_reduction_figure.png&quot;)
+    )
+
+    # Performance by complexity figure
+    create_complexity_performance_figure(
+        study_results,
+        ground_truth,
+        save_path=str(output_path / &quot;complexity_performance_figure.png&quot;)
+    )
+
+    # Calibration comparison figure
+    if 'uncertainty_results' in locals():
+        create_calibration_figure(
+            uncertainty_results,
+            save_path=str(output_path / &quot;calibration_figure.png&quot;)
+        )
+
+    print(&quot;Figure generation complete.&quot;)
+
+    # 7. Generate summary report
+    print(&quot;\n7. GENERATING SUMMARY REPORT...&quot;)
+
+    summary_report = generate_comprehensive_summary(
+        ablation_results=study_results,
+        error_analysis=method_error_results,
+        statistical_analysis=statistical_data,
+        uncertainty_analysis=uncertainty_results if 'uncertainty_results' in locals() else None,
+        metrics_analysis=all_metrics
+    )
+
+    with open(str(output_path / &quot;comprehensive_analysis_summary.txt&quot;), 'w') as f:
+        f.write(summary_report)
+
+    print(&quot;=&quot; * 80)
+    print(&quot;ANALYSIS PIPELINE COMPLETE!&quot;)
+    print(f&quot;All results saved to: {output_path}&quot;)
+    print(&quot;=&quot; * 80)
+
+    return {
+        'ablation_results': study_results,
+        'error_analysis': method_error_results,
+        'statistical_analysis': statistical_data,
+        'uncertainty_analysis': uncertainty_results if 'uncertainty_results' in locals() else None,
+        'metrics_analysis': all_metrics,
+        'output_directory': str(output_path)
+    }
+
+
+def generate_comprehensive_summary(
+    ablation_results, error_analysis, statistical_analysis, 
+    uncertainty_analysis, metrics_analysis
+):
+    &quot;&quot;&quot;Generate a comprehensive summary report&quot;&quot;&quot;
+
+    summary = []
+    summary.append(&quot;=&quot; * 80)
+    summary.append(&quot;RXNEXTRACT COMPREHENSIVE ANALYSIS SUMMARY&quot;)
+    summary.append(&quot;=&quot; * 80)
+    summary.append(&quot;&quot;)
+
+    # Performance highlights
+    summary.append(&quot;PERFORMANCE HIGHLIGHTS&quot;)
+    summary.append(&quot;-&quot; * 40)
+    baseline_cra = metrics_analysis['direct_extraction']['cra']
+    complete_cra = metrics_analysis['complete_framework']['cra']
+    improvement = ((complete_cra - baseline_cra) / baseline_cra) * 100
+
+    summary.append(f&quot;Complete Reaction Accuracy:&quot;)
+    summary.append(f&quot;  Baseline: {baseline_cra:.1%}&quot;)
+    summary.append(f&quot;  Complete Framework: {complete_cra:.1%}&quot;)
+    summary.append(f&quot;  Improvement: +{improvement:.1f}%&quot;)
+    summary.append(&quot;&quot;)
+
+    # Error reduction summary
+    summary.append(&quot;ERROR REDUCTION SUMMARY&quot;)
+    summary.append(&quot;-&quot; * 40)
+
+    baseline_errors = error_analysis['direct_extraction']
+    complete_errors = error_analysis['complete_framework']
+
+    entity_reduction = ((baseline_errors.entity_errors - complete_errors.entity_errors) / 
+                       baseline_errors.entity_errors) * 100
+    role_reduction = ((baseline_errors.role_errors - complete_errors.role_errors) / 
+                     baseline_errors.role_errors) * 100
+    condition_reduction = ((baseline_errors.condition_errors - complete_errors.condition_errors) / 
+                          baseline_errors.condition_errors) * 100
+
+    summary.append(f&quot;Entity Recognition Errors: -{entity_reduction:.1f}%&quot;)
+    summary.append(f&quot;Role Classification Errors: -{role_reduction:.1f}%&quot;)
+    summary.append(f&quot;Condition Extraction Errors: -{condition_reduction:.1f}%&quot;)
+    summary.append(&quot;&quot;)
+
+    # Statistical significance
+    summary.append(&quot;STATISTICAL SIGNIFICANCE&quot;)
+    summary.append(&quot;-&quot; * 40)
+    pairwise = statistical_analysis['pairwise_comparisons']['baseline_vs_complete']
+    mcnemar = statistical_analysis['mcnemar_tests']['classification_performance']
+
+    summary.append(f&quot;Paired t-test p-value: {pairwise['p_value']:.6f}&quot;)
+    summary.append(f&quot;Effect size (Cohen's d): {pairwise['effect_size']:.3f}&quot;)
+    summary.append(f&quot;McNemar's χ²: {mcnemar['statistic']:.2f} (p = {mcnemar['p_value']:.6f})&quot;)
+    summary.append(&quot;&quot;)
+
+    # Uncertainty quantification
+    if uncertainty_analysis:
+        summary.append(&quot;UNCERTAINTY QUANTIFICATION&quot;)
+        summary.append(&quot;-&quot; * 40)
+        summary.append(f&quot;Expected Calibration Error: {uncertainty_analysis['calibration_metrics']['ece']:.4f}&quot;)
+        summary.append(f&quot;Brier Score: {uncertainty_analysis['calibration_metrics']['brier_score']:.4f}&quot;)
+        summary.append(f&quot;High-confidence accuracy: {uncertainty_analysis['high_confidence_accuracy']:.3f}&quot;)
+        summary.append(&quot;&quot;)
+
+    # Component contributions
+    summary.append(&quot;COMPONENT CONTRIBUTIONS&quot;)
+    summary.append(&quot;-&quot; * 40)
+
+    configs = ['direct_extraction', 'structured_output', 'meta_prompt', 
+               'chain_of_thought', 'cot_reflection', 'self_grounding', 'complete_framework']
+
+    prev_cra = 0
+    for config in configs:
+        if config in metrics_analysis:
+            cra = metrics_analysis[config]['cra']
+            contribution = cra - prev_cra
+            summary.append(f&quot;{config.replace('_', ' ').title()}: {cra:.3f} (+{contribution:.3f})&quot;)
+            prev_cra = cra
+
+    summary.append(&quot;&quot;)
+    summary.append(&quot;=&quot; * 80)
+
+    return &quot;\n&quot;.join(summary)
+
+
+# Helper functions for figure generation
+def create_error_reduction_figure(error_comparisons, save_path):
+    &quot;&quot;&quot;Create error reduction visualization (Figure 4 from paper)&quot;&quot;&quot;
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    # Extract error reduction data
+    categories = ['Entity Recognition', 'Role Classification', 'Condition Extraction']
+    reductions = []
+
+    for comparison in error_comparisons:
+        if 'entity' in comparison.error_type.lower():
+            reductions.append(comparison.error_reduction)
+        elif 'role' in comparison.error_type.lower():
+            reductions.append(comparison.error_reduction)
+        elif 'condition' in comparison.error_type.lower():
+            reductions.append(comparison.error_reduction)
+
+    # Create bar plot
+    fig, ax = plt.subplots(figsize=(10, 6))
+    bars = ax.bar(categories, reductions, color=['#2E86AB', '#A23B72', '#F18F01'])
+
+    # Add value labels on bars
+    for bar, reduction in zip(bars, reductions):
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height,
+                f'{reduction:.1f}%',
+                ha='center', va='bottom', fontweight='bold')
+
+    ax.set_ylabel('Error Reduction (%)', fontsize=12)
+    ax.set_title('Error Reduction by Category', fontsize=14, fontweight='bold')
+    ax.set_ylim(0, max(reductions) * 1.1)
+
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    plt.close()
+
+
+def create_complexity_performance_figure(study_results, ground_truth, save_path):
+    &quot;&quot;&quot;Create performance by complexity visualization&quot;&quot;&quot;
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    # This would require implementing complexity assignment
+    # Placeholder for the actual implementation
+    complexities = ['Simple', 'Moderate', 'Complex']
+    configs = ['Baseline', 'CoT', 'Complete Framework']
+
+    # Mock data - replace with actual complexity analysis
+    data = np.array([
+        [0.45, 0.35, 0.25],  # Baseline
+        [0.52, 0.41, 0.32],  # CoT
+        [0.65, 0.51, 0.42]   # Complete
+    ])
+
+    # Create grouped bar plot
+    x = np.arange(len(complexities))
+    width = 0.25
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    for i, config in enumerate(configs):
+        ax.bar(x + i*width, data[i], width, label=config)
+
+    ax.set_xlabel('Reaction Complexity')
+    ax.set_ylabel('Complete Reaction Accuracy')
+    ax.set_title('Performance by Reaction Complexity')
+    ax.set_xticks(x + width)
+    ax.set_xticklabels(complexities)
+    ax.legend()
+
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    plt.close()
+
+
+def create_calibration_figure(uncertainty_results, save_path):
+    &quot;&quot;&quot;Create calibration visualization&quot;&quot;&quot;
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    # Extract calibration data
+    calibration_data = uncertainty_results['calibration_metrics']
+
+    # Create reliability diagram
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+
+    # Reliability diagram
+    bin_boundaries = np.linspace(0, 1, 11)
+    bin_centers = (bin_boundaries[:-1] + bin_boundaries[1:]) / 2
+
+    # Mock reliability data - replace with actual data
+    observed_frequencies = bin_centers + np.random.normal(0, 0.05, len(bin_centers))
+    observed_frequencies = np.clip(observed_frequencies, 0, 1)
+
+    ax1.plot([0, 1], [0, 1], 'k--', label='Perfect calibration')
+    ax1.plot(bin_centers, observed_frequencies, 'ro-', label='Model calibration')
+    ax1.set_xlabel('Mean Predicted Probability')
+    ax1.set_ylabel('Fraction of Positives')
+    ax1.set_title('Reliability Diagram')
+    ax1.legend()
+    ax1.grid(True, alpha=0.3)
+
+    # Confidence distribution
+    confidences = np.random.beta(2, 2, 1000)  # Mock data
+    ax2.hist(confidences, bins=20, alpha=0.7, edgecolor='black')
+    ax2.set_xlabel('Confidence Score')
+    ax2.set_ylabel('Frequency')
+    ax2.set_title('Confidence Distribution')
+    ax2.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    plt.close()
+
+# Example usage of the complete analysis pipeline
+if __name__ == &quot;__main__&quot;:
+    # Load your data
+    test_procedures = load_test_data(&quot;test_procedures.json&quot;)
+    ground_truth = load_ground_truth(&quot;ground_truth.json&quot;)
+
+    # Run complete analysis
+    results = run_paper_reproduction_analysis(
+        model_path=&quot;./path/to/model&quot;,
+        test_data=test_procedures,
+        ground_truth=ground_truth,
+        output_dir=&quot;./paper_reproduction_results&quot;
+    )
+
+    print(&quot;Paper reproduction analysis complete!&quot;)
+    print(f&quot;Results available in: {results['output_directory']}&quot;)
+</code></pre>
+<h2 id="command-line-analysis-scripts">🛠️ Command Line Analysis Scripts</h2>
+<p>For convenience, RxNExtract provides command-line scripts for all analysis functions:</p>
+<h3 id="error-analysis-script">Error Analysis Script</h3>
+<pre><code class="language-bash"># Run comprehensive error analysis
+python scripts/run_error_analysis.py \
+    --predictions model_predictions.json \
+    --ground-truth ground_truth.json \
+    --method-name &quot;Complete Framework&quot; \
+    --output-dir ./analysis_output \
+    --include-cot-analysis \
+    --raw-outputs raw_model_outputs.json
+
+# Compare multiple methods
+python scripts/run_error_analysis.py \
+    --predictions-files baseline.json cot.json complete.json \
+    --method-names &quot;Baseline&quot; &quot;CoT&quot; &quot;Complete&quot; \
+    --ground-truth ground_truth.json \
+    --output-dir ./comparison_output \
+    --generate-comparison-report
+</code></pre>
+<h3 id="ablation-study-script">Ablation Study Script</h3>
+<pre><code class="language-bash"># Run complete ablation study
+python scripts/run_ablation_study.py \
+    --model-path ./model \
+    --test-data test_procedures.json \
+    --ground-truth ground_truth.json \
+    --output-dir ./ablation_output \
+    --sample-size 1000 \
+    --stratified \
+    --complexity-analysis \
+    --dynamic-prompt-analysis
+
+# Custom configuration ablation
+python scripts/run_ablation_study.py \
+    --config custom_ablation_config.yaml \
+    --test-data test_procedures.json \
+    --ground-truth ground_truth.json \
+    --output-dir ./custom_ablation
+</code></pre>
+<h3 id="statistical-analysis-script">Statistical Analysis Script</h3>
+<pre><code class="language-bash"># Pairwise method comparison
+python scripts/run_statistical_analysis.py \
+    --method1-results baseline_results.json \
+    --method2-results framework_results.json \
+    --method-names &quot;Baseline&quot; &quot;Complete Framework&quot; \
+    --output-dir ./stats_output \
+    --tests paired_t mcnemar bootstrap
+
+# Multiple method ANOVA
+python scripts/run_statistical_analysis.py \
+    --results-files baseline.json cot.json grounding.json complete.json \
+    --method-names &quot;Baseline&quot; &quot;CoT&quot; &quot;Self-Grounding&quot; &quot;Complete&quot; \
+    --output-dir ./anova_output \
+    --test anova \
+    --post-hoc-tests
+</code></pre>
+<h3 id="uncertainty-analysis-script">Uncertainty Analysis Script</h3>
+<pre><code class="language-bash"># Calibration analysis
+python scripts/run_uncertainty_analysis.py \
+    --predictions predictions_with_confidence.json \
+    --ground-truth ground_truth.json \
+    --output-dir ./uncertainty_output \
+    --calibration-methods temperature_scaling platt_scaling isotonic \
+    --generate-plots \
+    --confidence-analysis
+
+# With validation data for temperature scaling
+python scripts/run_uncertainty_analysis.py \
+    --predictions predictions.json \
+    --ground-truth ground_truth.json \
+    --validation-data validation_data.json \
+    --output-dir ./uncertainty_output \
+    --temperature-scaling \
+    --reliability-diagram
+</code></pre>
+<h3 id="complete-analysis-pipeline-script">Complete Analysis Pipeline Script</h3>
+<pre><code class="language-bash"># Run full paper reproduction analysis
+python scripts/run_complete_analysis.py \
+    --model-path ./model \
+    --test-data test_procedures.json \
+    --ground-truth ground_truth.json \
+    --output-dir ./complete_analysis \
+    --config analysis_config.yaml \
+    --generate-figures \
+    --export-tables
+
+# Quick analysis with default settings
+python scripts/run_complete_analysis.py \
+    --model-path ./model \
+    --test-data test_procedures.json \
+    --ground-truth ground_truth.json \
+    --quick-analysis
+</code></pre>
+<h2 id="analysis-output-structure">📁 Analysis Output Structure</h2>
+<p>The analysis framework generates organized output files:</p>
+<pre><code>analysis_output/
+├── error_analysis/
+│   ├── error_analysis_results.json
+│   ├── error_analysis_report.txt
+│   ├── cot_failure_analysis.json
+│   └── method_comparison.json
+├── ablation_study/
+│   ├── ablation_results.json
+│   ├── ablation_report.txt
+│   ├── ablation_results.csv
+│   └── component_contributions.json
+├── statistical_analysis/
+│   ├── statistical_results.json
+│   ├── statistical_report.txt
+│   ├── pairwise_comparisons.csv
+│   └── significance_tests.json
+├── uncertainty_analysis/
+│   ├── calibration_metrics.json
+│   ├── uncertainty_report.txt
+│   ├── reliability_diagram.png
+│   └── confidence_analysis.json
+├── metrics/
+│   ├── comprehensive_metrics.json
+│   ├── complexity_analysis.csv
+│   └── metrics_summary.json
+├── figures/
+│   ├── error_reduction_figure.png
+│   ├── performance_heatmap.png
+│   ├── calibration_comparison.png
+│   └── complexity_performance.png
+└── tables/
+    ├── metrics_comparison_table.csv
+    ├── statistical_significance_table.csv
+    └── error_reduction_table.csv
+</code></pre>
+<h2 id="custom-analysis-configuration">🔧 Custom Analysis Configuration</h2>
+<h3 id="configuration-file-structure">Configuration File Structure</h3>
+<p>Create <code>analysis_config.yaml</code>:</p>
+<pre><code class="language-yaml"># Analysis Configuration
+analysis:
+  # Error Analysis Settings
+  error_analysis:
+    include_cot_failures: true
+    categorize_by_complexity: true
+    detailed_breakdown: true
+    confidence_threshold: 0.8
+
+  # Ablation Study Settings  
+  ablation_study:
+    sample_size: 1000
+    stratified_sampling: true
+    complexity_stratification: ['simple', 'moderate', 'complex']
+    random_state: 42
+    include_dynamic_prompt_analysis: true
+    save_intermediate_results: true
+
+  # Statistical Analysis Settings
+  statistical_analysis:
+    significance_level: 0.05
+    confidence_level: 0.95
+    bootstrap_iterations: 1000
+    effect_size_calculation: true
+    normality_tests: true
+
+  # Uncertainty Quantification Settings
+  uncertainty_quantification:
+    calibration_methods: 
+      - temperature_scaling
+      - platt_scaling
+      - isotonic_regression
+    n_calibration_bins: 10
+    confidence_threshold: 0.8
+    generate_reliability_plots: true
+    stratified_analysis: true
+
+  # Metrics Calculation Settings
+  metrics:
+    include_detailed_breakdown: true
+    complexity_analysis: true
+    custom_metrics: 
+      - yield_extraction_accuracy
+      - stoichiometry_accuracy
+    export_formats: ['json', 'csv']
+
+# Output Settings
+output:
+  base_directory: &quot;./analysis_results&quot;
+  generate_figures: true
+  export_tables: true
+  create_summary_report: true
+  figure_format: &quot;png&quot;
+  figure_dpi: 300
+
+# Logging
+logging:
+  level: &quot;INFO&quot;
+  file: &quot;analysis.log&quot;
+  include_timestamps: true
+</code></pre>
+<h3 id="custom-metrics-implementation">Custom Metrics Implementation</h3>
+<pre><code class="language-python">from chemistry_llm.analysis.metrics import BaseMetric
+
+class YieldExtractionMetric(BaseMetric):
+    &quot;&quot;&quot;Custom metric for yield extraction accuracy&quot;&quot;&quot;
+
+    def calculate(self, predictions, ground_truth):
+        correct_yields = 0
+        total_yields = 0
+
+        for pred, truth in zip(predictions, ground_truth):
+            # Extract yields from ground truth
+            truth_yields = self.extract_yields(truth)
+            # Extract yields from prediction
+            pred_yields = self.extract_yields(pred['extracted_data'])
+
+            total_yields += len(truth_yields)
+
+            # Count correct yield extractions
+            for truth_yield in truth_yields:
+                if any(self.yields_match(truth_yield, pred_yield) 
+                       for pred_yield in pred_yields):
+                    correct_yields += 1
+
+        return {
+            'yield_extraction_accuracy': correct_yields / total_yields if total_yields &gt; 0 else 0.0,
+            'total_yields': total_yields,
+            'correct_yields': correct_yields
+        }
+
+    def extract_yields(self, data):
+        &quot;&quot;&quot;Extract yield information from data structure&quot;&quot;&quot;
+        yields = []
+
+        if isinstance(data, dict):
+            # Extract from products
+            for product in data.get('products', []):
+                if 'yield' in product:
+                    yields.append(product['yield'])
+
+        return yields
+
+    def yields_match(self, truth_yield, pred_yield, tolerance=0.05):
+        &quot;&quot;&quot;Check if predicted yield matches truth yield within tolerance&quot;&quot;&quot;
+        # Implementation for yield matching logic
+        # This would handle percentage parsing, numerical comparison, etc.
+        pass
+
+# Register custom metric
+from chemistry_llm.analysis import MetricsCalculator
+
+metrics_calc = MetricsCalculator()
+metrics_calc.register_custom_metric('yield_extraction', YieldExtractionMetric())
+</code></pre>
+<h2 id="research-applications">🎯 Research Applications</h2>
+<h3 id="literature-survey-analysis">Literature Survey Analysis</h3>
+<pre><code class="language-python">def analyze_extraction_methods_survey():
+    &quot;&quot;&quot;Analyze multiple extraction methods from literature&quot;&quot;&quot;
+
+    # Methods to compare
+    methods = {
+        'ChemRxnBERT': load_chemrxnbert_results(),
+        'GPT-3.5': load_gpt35_results(),
+        'RxnScribe': load_rxnscribe_results(),
+        'RxNExtract': load_rxnextract_results()
+    }
+
+    ground_truth = load_ground_truth()
+
+    # Comprehensive comparison
+    comparison_results = {}
+
+    for method_name, predictions in methods.items():
+        # Error analysis
+        error_results = error_analyzer.analyze_prediction_errors(
+            predictions, ground_truth, method_name
+        )
+
+        # Metrics calculation
+        metrics = metrics_calc.calculate_comprehensive_metrics(
+            predictions, ground_truth
+        )
+
+        # Uncertainty analysis (if confidence available)
+        if hasattr(predictions[0], 'confidence'):
+            uncertainty_results = uncertainty.analyze_prediction_uncertainty(
+                predictions, ground_truth
+            )
+        else:
+            uncertainty_results = None
+
+        comparison_results[method_name] = {
+            'error_analysis': error_results,
+            'metrics': metrics,
+            'uncertainty': uncertainty_results
+        }
+
+    # Statistical comparison
+    method_cra_scores = {
+        name: [calc_cra(pred, truth) for pred, truth in zip(predictions, ground_truth)]
+        for name, predictions in methods.items()
+    }
+
+    anova_results = stats_analyzer.perform_anova(
+        groups=method_cra_scores,
+        post_hoc=True
+    )
+
+    # Generate literature comparison report
+    generate_literature_comparison_report(
+        comparison_results,
+        anova_results,
+        &quot;literature_survey_analysis.txt&quot;
+    )
+
+# Run literature survey
+analyze_extraction_methods_survey()
+</code></pre>
+<h3 id="domain-adaptation-analysis">Domain Adaptation Analysis</h3>
+<pre><code class="language-python">def analyze_domain_adaptation():
+    &quot;&quot;&quot;Analyze performance across different chemistry domains&quot;&quot;&quot;
+
+    domains = ['organic', 'inorganic', 'polymer', 'catalysis']
+
+    for domain in domains:
+        domain_test_data = load_domain_data(domain)
+        domain_ground_truth = load_domain_ground_truth(domain)
+
+        print(f&quot;\nAnalyzing {domain.upper()} chemistry domain:&quot;)
+
+        # Run ablation study for this domain
+        domain_ablation = ablation.run_complete_study(
+            test_data=domain_test_data,
+            ground_truth=domain_ground_truth,
+            sample_size=min(500, len(domain_test_data))
+        )
+
+        # Domain-specific error analysis
+        domain_errors = error_analyzer.analyze_prediction_errors(
+            predictions=domain_ablation['complete_framework'].predictions,
+            ground_truth=domain_ground_truth,
+            method_name=f&quot;Complete-{domain.title()}&quot;
+        )
+
+        # Save domain-specific results
+        save_domain_results(domain, domain_ablation, domain_errors)
+
+    # Cross-domain comparison
+    generate_cross_domain_analysis(domains)
+
+# Run domain adaptation analysis
+analyze_domain_adaptation()
+</code></pre>
+<hr />
+<p><strong>This comprehensive analysis framework enables researchers to:</strong>
+- <strong>Reproduce all results</strong> from the RxNExtract research paper
+- <strong>Conduct systematic evaluations</strong> of new extraction methods
+- <strong>Perform rigorous statistical analysis</strong> for publication-quality research
+- <strong>Quantify uncertainty and calibration</strong> for reliable confidence estimation
+- <strong>Generate publication-ready figures and tables</strong> automatically</p>
+<p>For implementation details and advanced customization, refer to the source code documentation in the <code>src/chemistry_llm/analysis/</code> directory.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
